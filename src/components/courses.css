@@ -1,0 +1,38 @@
+.hideonhover1:hover {
+visibility: hidden;
+}
+
+.hideonhover2:hover {
+visibility: hidden;
+ }
+
+.hideonhover3:hover {
+visibility: hidden;
+}
+
+
+.hideonhover1:hover .showonhover1 {
+display: block;
+}
+
+.hideonhover2:hover .showonhover2 {
+display: block;
+}
+
+.hideonhover3:hover .showonhover3 {
+display: block;
+}
+
+
+
+.showonhover1 {
+    display:none;
+}
+
+.showonhover2 {
+    display:none;
+}
+
+.showonhover3 {
+    display:none;
+}
