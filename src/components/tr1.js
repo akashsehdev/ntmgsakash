@@ -21,7 +21,7 @@ function Index() {
                         <div className="rounded border-gray-300 text-center p-8 md:p-16 dark:border-gray-700 w-full">
                             <h2 className="text-4xl lg:text-5xl font-extrabold text-center pt-14">TARUN RAJPUT</h2>
                             <p className="text-md text-left mt-14 text-gray-600 tracking-wide font-thin text-xl">
-                                <span className="text-4xl">He</span> is a professional Indian model (GROOMING EXPERT, EDUCATOR, SHOW DIRECTOR, FASHION CHOREOGRAPHER) and the founder of New Talent Modeling Grooming School.
+                                <span className="text-3xl">He</span> is a professional Indian model (GROOMING EXPERT, EDUCATOR, SHOW DIRECTOR, FASHION CHOREOGRAPHER) and the founder of New Talent Modeling Grooming School.
                             </p>
                             <br />
                             <p className="text-md text-left text-gray-600 tracking-wide font-thin text-xl">
