@@ -50,11 +50,10 @@ function MyApp() {
    }
 
     return (
-        <div className="bg-gradient-to-b from-purple-600 to-indigo-700 h-[120vh] mb-16 w-full">
-            <div className="md:px-20 px-4 py-8">
+        <div className="bg-gradient-to-b w-full">
+            <div className="md:px-20 px-4 ">
                 <div className="flex items-center justify-between">
                     
-                  
                     <div className="lg:hidden text-white" onClick={() => setShow(!show)}>
                         {show ? (
                             <div id="close" className=" close-m-menu" onclick="MenuHandler(false)">

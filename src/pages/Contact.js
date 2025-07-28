@@ -6,14 +6,15 @@ import Header from '../components/header'
 // import Modelcarousel from '../components/carousel'
 import Footer1 from '../components/footer'
 import ContactForm from '../components/contactform'
+import HeroSection from '../components/hero_new'
 
 export default function Contact() {
   return (
     <>
-     <Header />
-     
+     {/* <Header /> */}
+     <HeroSection/>
      <ContactForm />
-      <Footer1/>
+     <Footer1/>
     </>
   )
 }

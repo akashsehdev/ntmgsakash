@@ -9,12 +9,16 @@ import Tr1 from '../components/tr1'
 import Tr2 from '../components/tr2'
 import Tr3 from '../components/tr3'
 import Trdesigner from '../components/trdesigner'
+import HeroSection from '../components/hero_new'
 // import Tr4 from '../components/tr4'
 
 export default function Tarun() {
   return (
     <>
-     <Header />
+
+     {/* <Header />
+      */}
+      <HeroSection/>
       {/* <Hero /> */}
       <Tr1/>
       <Tr2/>

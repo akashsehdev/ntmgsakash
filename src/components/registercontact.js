@@ -3,7 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { collection, addDoc } from 'firebase/firestore';
+import db from '.backend/firebase'; // path to your firebase config
 
 const Index = () => {
     const [register,setregister] = useState({
@@ -11,44 +12,38 @@ const Index = () => {
         email: "",
         phone:"",
         age:"",
-         city:"",
-         about:""
+        city:"",
+        about:""
     })
 
     const inputHandler = (e)=>{
         setregister({...register,[e.target.name]:e.target.value})
     }
 
-   const submitHandler = (e) =>{
+   const submitHandler = async (e) => {
+  e.preventDefault();
+  const { email, name, phone, city, about, age } = register;
 
-         e.preventDefault();
-         const {email, name, phone, city,about,age} = register;
-         if(email == "" || name=="" || phone=="" || age=="" || city=="" || about==""){
-             toast.warning("please fill all the filds",{
-                position:'top-center'
-            });
-         }
-         else{
-            toast("Please wait for sending Email",{
-                position:'top-center'
-            });
-            console.log(register)
-            axios.post("https://spiffy-crumble-d82679.netlify.app/.netlify/functions/api/register",register)
-            .then((res)=>{
-                console.log(res.data);
-                toast.success("the Email Has Been Sent",{
-                    position:'top-center'
-                });
-            })
-            .catch((error)=>{
-                console.log(error);
-                toast.warning("error in sending email",{
-                    position:'top-center'
-                });
-            })
-         }
-       
-   }
+  if (!email || !name || !phone || !age || !city || !about) {
+    toast.warning("Please fill all the fields", { position: 'top-center' });
+    return;
+  }
+
+  toast("Please wait...", { position: 'top-center' });
+
+  try {
+    // Save to Firebase
+    await addDoc(collection(db, "registrations"), register);
+
+    // Optional: Send to your backend to trigger Mailchimp
+    await axios.post("/.netlify/functions/sendEmail", register); // this will trigger Mailchimp
+
+    toast.success("Form submitted and email sent!", { position: 'top-center' });
+  } catch (error) {
+    console.error(error);
+    toast.error("Something went wrong!", { position: 'top-center' });
+  }
+};
     return (
         <div>
             <div>

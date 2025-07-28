@@ -9,18 +9,17 @@ import Abouthero from '../components/abouthero'
 import Aboutbenefit from '../components/aboutbenefit'
 import Aboutlearn from '../components/aboutlearn'
 import HeroSection from '../components/hero_new'
+import ModelDetail from '../components/ModelDetails'
+import Navbar from '../components/navbar'
 
 
-export default function AboutPage() {
+export default function ModelsDetailsPage() {
   return (
     <>
      {/* <Header /> */}
-     <HeroSection/>
-     <Abouthero />
-     <Aboutbenefit />
-     <Aboutlearn />
-     <Course />
-      <Footer1/>
+     <Navbar/>
+     <ModelDetail/>
+     <Footer1/>
     </>
   )
 }
