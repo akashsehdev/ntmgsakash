@@ -1,136 +1,243 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { collection, addDoc } from 'firebase/firestore';
-import db from '.backend/firebase'; // path to your firebase config
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 const Index = () => {
-    const [register,setregister] = useState({
-        name: "",
-        email: "",
-        phone:"",
-        age:"",
-        city:"",
-        about:""
-    })
+  const [register, setRegister] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    age: "",
+    city: "",
+    about: "",
+    courses: [],
+  });
 
-    const inputHandler = (e)=>{
-        setregister({...register,[e.target.name]:e.target.value})
+  const inputHandler = (e) => {
+    setRegister({ ...register, [e.target.name]: e.target.value });
+  };
+
+  const handleCourseChange = (e) => {
+    const course = e.target.value;
+    const updatedCourses = register.courses.includes(course)
+      ? register.courses.filter((c) => c !== course)
+      : [...register.courses, course];
+    setRegister({ ...register, courses: updatedCourses });
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    const { email, name, phone, city, about, age, courses } = register;
+
+    if (
+      !email ||
+      !name ||
+      !phone ||
+      !age ||
+      !city ||
+      !about ||
+      courses.length === 0
+    ) {
+      toast.warning("Please fill all fields and select at least one course", {
+        position: "top-center",
+      });
+      return;
     }
 
-   const submitHandler = async (e) => {
-  e.preventDefault();
-  const { email, name, phone, city, about, age } = register;
+    toast.info("Submitting...", { position: "top-center" });
 
-  if (!email || !name || !phone || !age || !city || !about) {
-    toast.warning("Please fill all the fields", { position: 'top-center' });
-    return;
-  }
+    try {
+      await addDoc(collection(db, "registrations"), register);
 
-  toast("Please wait...", { position: 'top-center' });
+      // Send to Google Sheets + Email via Apps Script
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzkXAHPtTJpHz9MuoAAxED_y2_xUE2ILQGw6DqZZ2M7KdZV8GM30MmLJONgnEFIE1Px9A/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(register),
+      });
 
-  try {
-    // Save to Firebase
-    await addDoc(collection(db, "registrations"), register);
+      const result = await response.json();
+      console.log("Google Script Response", result);
 
-    // Optional: Send to your backend to trigger Mailchimp
-    await axios.post("/.netlify/functions/sendEmail", register); // this will trigger Mailchimp
+      if (result.status === "success") {
+        toast.success("Registration successful!", { position: "top-center" });
 
-    toast.success("Form submitted and email sent!", { position: 'top-center' });
-  } catch (error) {
-    console.error(error);
-    toast.error("Something went wrong!", { position: 'top-center' });
-  }
-};
-    return (
-        <div>
-            <div>
-                <form  className="container mx-auto bg-white shadow rounded" onSubmit={submitHandler}>
-                    <div>
-                        <div className="xl:w-full border-b border-gray-300 dark:border-gray-700 py-5">
-                            <div className="flex items-center w-11/12 mx-auto">
-                           
-                                <p className="text-lg text-gray-800 dark:text-gray-100 font-bold">Enrollment Form</p>
-                                <div className="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={16} height={16}>
-                                        <path className="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="currentColor" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div className="w-11/12 mx-auto">
-                            <div className="container mx-auto">
-                                <div className="my-8 mx-auto xl:w-full xl:mx-0">
-                                    <div className="xl:flex lg:flex md:flex flex-wrap justify-center">
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4 ">
-                                            <label htmlFor="FirstName" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                               Name
-                                            </label>
-                                            <input type="text" name="name" required id="FirstName" className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-indigo-700 text-gray-800 dark:text-gray-100" placeholder
-                                            onChange={inputHandler} value={register.name} />
-                                        </div>
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4  ">
-                                            <label htmlFor="LastName" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                               Age
-                                            </label>
-                                            <input type="text" id="LastName" name="age" required className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-indigo-700 text-gray-800 dark:text-gray-100" placeholder
-                                            onChange={inputHandler} value={register.age} />
-                                        </div>
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4 ">
-                                            <label htmlFor="email2" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                                Email
-                                            </label>
-                                            <div className="relative">
-                                                <div className="absolute text-gray-600 dark:text-gray-400 flex items-center px-4 border-r h-full">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" />
-                                                        <rect x={3} y={5} width={18} height={14} rx={2} />
-                                                        <polyline points="3 7 12 13 21 7" />
-                                                    </svg>
-                                                </div>
-                                                <input id="email2" name="email" required className="w-full bg-transparent text-gray-800 dark:text-gray-100 focus:outline-none focus:border focus:border-indigo-700 font-normal py-3 flex items-center pl-16 text-sm  rounded border shadow" placeholder 
-                                                onChange={inputHandler} value={register.email}/>
-                                            </div>
-                                            
-                                        </div>
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4 ">
-                                            <label htmlFor="StreetAddress" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                               Contact Number
-                                            </label>
-                                            <input type="text" id="StreetAddress" name="phone" required className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-indigo-700 text-gray-800 dark:text-gray-100" placeholder 
-                                            onChange={inputHandler} value={register.phone}/>
-                                        </div>
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4">
-                                            <label htmlFor="StreetAddress" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                                City
-                                            </label>
-                                            <input type="text" id="StreetAddress" name="city" required className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-indigo-700 text-gray-800 dark:text-gray-100" placeholder onChange={inputHandler}  value={register.city}/>
-                                        </div>
-                                        <div className="xl:w-2/5 lg:w-2/5 md:w-2/5 flex flex-col p-4 mb-6">
-                                            <label htmlFor="Country" className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">
-                                                Tell Us About Yourself
-                                            </label>
-                                            <input type="text" id="Country" name="about" required className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none bg-transparent focus:border-indigo-700 text-gray-800 dark:text-gray-100" placeholder onChange={inputHandler} value={register.about} />
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full py-4 sm:px-12 px-4 bg-white dark:bg-gray-700 mt-6 flex justify-center rounded-bl rounded-br">
-                            {/* <button className="btn text-sm focus:outline-none text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-500 py-2 px-6 mr-4 rounded hover:bg-gray-200 transition duration-150 ease-in-out">Restore</button> */}
-                            <button className="bg-black transition duration-150 ease-in-out hover:bg-gray rounded text-white px-8 py-2 text-2xl focus:outline-none" type="submit">
-                                Register Now
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <ToastContainer /> ;
+        setRegister({
+          name: "",
+          email: "",
+          phone: "",
+          age: "",
+          city: "",
+          about: "",
+          courses: [],
+        });
+      } else {
+        console.error("Google Script Error:", result.message);
+        toast.error("Submission failed. Try again.", { position: "top-center" });
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("Submission failed. Try again.", { position: "top-center" });
+    }
+  };
+
+  const courseList = [
+    "Runway Training",
+    "Photoshoot Basics",
+    "Grooming & Etiquette",
+    "Fashion Styling",
+    "Fitness & Nutrition",
+    "Model Portfolio Building",
+    "Camera Confidence",
+  ];
+
+  return (
+    <div className="bg-gray-100 py-10 px-4">
+      <form
+        onSubmit={submitHandler}
+        className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md"
+      >
+        <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
+          Enrollment Form
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Name */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={register.name}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          {/* Age */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Age
+            </label>
+            <input
+              type="text"
+              name="age"
+              value={register.age}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="23"
+              required
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={register.email}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+
+          {/* Phone */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              name="phone"
+              value={register.phone}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="+91 98765 43210"
+              required
+            />
+          </div>
+
+          {/* City */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              City
+            </label>
+            <input
+              type="text"
+              name="city"
+              value={register.city}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="New Delhi"
+              required
+            />
+          </div>
+
+          {/* About */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Tell us about yourself
+            </label>
+            <textarea
+              name="about"
+              rows="3"
+              value={register.about}
+              onChange={inputHandler}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-black"
+              placeholder="Your background, goals, etc."
+              required
+            />
+          </div>
         </div>
-    );
+
+        {/* Courses Checkboxes */}
+        <div className="mt-6">
+          <label className="block text-base font-semibold text-gray-800 mb-2">
+            Select Courses You’re Interested In
+          </label>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {courseList.map((course) => (
+              <label key={course} className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  value={course}
+                  checked={register.courses.includes(course)}
+                  onChange={handleCourseChange}
+                  className="form-checkbox text-black mr-2"
+                />
+                {course}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <button
+            type="submit"
+            className="bg-black text-white text-lg px-8 py-3 rounded-md hover:bg-gray-800 transition"
+          >
+            Register Now
+          </button>
+        </div>
+      </form>
+
+      <ToastContainer />
+    </div>
+  );
 };
+
 export default Index;
