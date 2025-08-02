@@ -379,7 +379,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative px-4 py-10 mx-auto">
+    <div className="relative px-4 mb-20 py-10 mx-auto">
       <Slider {...settings}>
         {models.map((model) => (
           <div key={`${model.category}-${model.id}`} className="px-4">

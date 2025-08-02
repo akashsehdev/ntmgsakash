@@ -1,37 +1,40 @@
+
+
 import React from "react";
+import tarun_1 from "../assets/tarun_2.JPG";
 
 function Index() {
     return (
-        <>
-            <div className="container mx-auto pt-28 md:pt-6 px-4">
-                <div className="flex flex-wrap md:flex-row">
-                    {/* Image Section - will appear on top on mobile and on the right on larger devices */}
-                    <div className="w-full md:w-2/5 flex justify-center order-1 md:order-2">
-                        <div className="rounded w-full">
-                            <img 
-                                src="/tarunrajput.png" 
-                                alt="Tarun Rajput" 
-                                className="object-contain w-full h-64 md:h-auto rounded" 
-                            />
-                        </div>
-                    </div>
+        <div className="max-w-screen-xl mx-auto my-10 md:my-32 px-4">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-y-12 md:gap-x-10">
 
-                    {/* Text Section - will appear below the image on mobile and on the left on larger devices */}
-                    <div className="w-full md:w-3/5 flex md:pr-6 mb-8 md:mb-0 order-2 md:order-1">
-                        <div className="rounded border-gray-300 text-center p-8 md:p-16 dark:border-gray-700 w-full">
-                            <h2 className="text-4xl lg:text-5xl font-extrabold text-center pt-14">TARUN RAJPUT</h2>
-                            <p className="text-md text-left mt-14 text-gray-600 tracking-wide font-thin text-xl">
-                                <span className="text-3xl">He</span> is a professional Indian model (GROOMING EXPERT, EDUCATOR, SHOW DIRECTOR, FASHION CHOREOGRAPHER) and the founder of New Talent Modeling Grooming School.
-                            </p>
-                            <br />
-                            <p className="text-md text-left text-gray-600 tracking-wide font-thin text-xl">
-                                After starting his career nearly a decade ago, Tarun Rajput has emerged as a respected figure in the fashion industry, known for his creativity and dedication. With collaborations with renowned designers, his influence has reshaped contemporary trends and left a lasting impact on haute couture.
-                            </p>
-                        </div>
+                {/* Text Section */}
+                <div className="w-full md:w-3/5">
+                    <div className="text-center md:text-left p-2 md:p-12">
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold">
+                            TARUN RAJPUT
+                        </h2>
+
+                        <p className="text-[17px] text-justify text-gray-700 mt-4 md:mt-8 leading-relaxed font-light md:text-xl">
+                            He is a professional Indian model <span className="font-semibold italic"> (GROOMING EXPERT, EDUCATOR, SHOW DIRECTOR, FASHION CHOREOGRAPHER) </span> and the founder of New Talent Modeling Grooming School.
+                        </p>
+
+                        <p className="text-[17px] text-justify text-gray-700 mt-6 leading-relaxed font-light text-lg md:text-xl">
+                            After starting his career nearly a decade ago, Tarun Rajput has emerged as a respected figure in the fashion industry, known for his creativity and dedication. With collaborations with renowned designers, his influence has reshaped contemporary trends and left a lasting impact on haute couture.
+                        </p>
                     </div>
                 </div>
+
+                {/* Image Section */}
+                <div className="w-full md:w-2/5 flex justify-center">
+                    <img
+                        src={tarun_1}
+                        alt="Tarun Rajput"
+                        className="w-full object-cover object-top max-w-sm md:max-w-full h-72 md:h-[500px] rounded-lg shadow-md"
+                    />
+                </div>
             </div>
-        </>
+        </div>
     );
 }
 

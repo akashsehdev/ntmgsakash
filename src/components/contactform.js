@@ -100,7 +100,7 @@ function MyApp() {
       </div>
 
       <div className="w-full flex items-center justify-center my-12">
-        <div className="absolute top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
+        <div className="top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
           <form onSubmit={submitHandler}>
             <p className="md:text-3xl text-xl font-bold text-center text-gray-700">
               Get in Touch with us!

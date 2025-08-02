@@ -10,6 +10,8 @@ import Footer1 from "../components/footer";
 import Testimonialcarousel from "../components/testimonialcarousel";
 import HomeModelsSection2 from "../components/home_section_2";
 import Programs from "../components/programs";
+import FAQSection from "../components/faq";
+import FormPopupCTA from "../components/formpopup";
 
 export default function Home() {
   return (
@@ -24,27 +26,29 @@ export default function Home() {
       <Modelcarousel />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
+      <FAQSection />
+      <FormPopupCTA />
       {/* <div className="flex justify-center text-center md:gap-14 col-span-2"> */}
-        {/* mobile */}
-        {/* <div className="md:hidden">
+      {/* mobile */}
+      {/* <div className="md:hidden">
           <h1>left mobile</h1>
           <p>Full Stack Developer</p>
         </div> */}
 
-        {/* mobile */}
-        {/* <div className="md:hidden">
+      {/* mobile */}
+      {/* <div className="md:hidden">
           <h1>Right Mobile</h1>
           <p>Full Stack Developer</p>
         </div> */}
 
-        {/* desktop */}
-        {/* <div className="hidden md:block">
+      {/* desktop */}
+      {/* <div className="hidden md:block">
           <h1>left desktop</h1>
           <p>Full Stack Developer</p>
         </div> */}
 
-        {/* desktop */}
-        {/* <div className="hidden md:block">
+      {/* desktop */}
+      {/* <div className="hidden md:block">
           <h1>Right Desktop</h1>
           <p>Full Stack Developer</p>
         </div>  */}

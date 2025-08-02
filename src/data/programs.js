@@ -1,14 +1,20 @@
 import image from "../assets/test2.jpeg";
+import one from "../assets/programs/one.jpg";
+import two from "../assets/programs/two.jpg";
+import three from "../assets/programs/three.jpg";
+import four from "../assets/programs/four.jpg";
+import five from "../assets/programs/five.jpg";
+import six from "../assets/programs/six.jpeg";
 
 const programs = [
   {
-    title: "ONLINE MENTORING PROGRAM",
+    title: "MODELLING PROGRAM",
     duration: "1 MONTH",
-    image: image,
+    image: one,
     slug: "online-mentoring-program",
     about:
       "Your introduction to the world of fashion & modelling. Build confidence and learn essential skills in just 4 weeks.",
-    fees: "₹30,000 – ₹35,000",
+    // fees: "₹30,000 – ₹35,000",
     overview: "Duration: 1 Month (4 weeks, 3 sessions/week)",
     plan: [
       {
@@ -46,38 +52,45 @@ const programs = [
     ],
   },
   {
-    title: "GROUP BATCH",
-    duration: "3 MONTH",
-    image: image,
+    title: "GROUP BATCH PROGRAM",
+    duration: "2 MONTH",
+    image: two,
     slug: "group-batch",
     about:
-      "A holistic program preparing you for fashion weeks, portfolio development, and industry networking.",
-    fees: "₹40,000 – ₹90,000 (with portfolio)",
-    overview: "Duration: 3 Months (12 weeks, 3 sessions/week)",
+      "A holistic program preparing you for fashion weeks, portfolio development, and industry networking. Expand your skills with hands-on training, styling sessions, and a trial shoot.",
+    // fees: "₹40,000 – ₹90,000 (with portfolio)",
+    overview: "Duration: 2 Months (8 weeks, 3 sessions/week)",
     plan: [
       {
-        month: "Month 1 (Weeks 1-4)",
+        month: "Weeks 1-2",
         topics: [
-          "Complete Runway Techniques (Audition Walk, Turns, Poses)",
-          "Personality Development & Confidence Building",
-          "Makeup, Hair, and Skincare Mastery",
-          "Trial Shoot (2 Looks)",
+          "Advanced Ramp Walk & Stage Presence",
+          "Expression Coaching for Photoshoots",
+          "Personal Styling & Wardrobe Consultation",
         ],
       },
       {
-        month: "Month 2 (Weeks 5-8)",
+        month: "Week 3-4",
         topics: [
-          "Advanced Posing for High Fashion & Editorial Shoots",
-          "Theatre & Acting Workshops for TVCs",
+          "Camera Training: Editorial & High-Fashion Posing",
+          "Hair & Makeup Masterclass",
+          "Fitness & Nutrition Guidance",
+        ],
+      },
+      {
+        month: "Week 5-6",
+        topics: [
+          "Theatre Classes: Confidence & Voice Modulation",
+          "Acting Basics for TVCs & Fashion Films",
+          "Social Media Branding & Growth Tips",
+        ],
+      },
+      {
+        month: "Week 7-8",
+        topics: [
+          "Trial Shoot with 3 Looks (Optional Add-on)",
           "Portfolio Development Guidance",
-        ],
-      },
-      {
-        month: "Month 3 (Weeks 9-12)",
-        topics: [
-          "Final Professional Portfolio Shoot (3/5 Looks)",
-          "Social Media Strategy & Digital Branding",
-          "Mentor Sessions + Placement Assistance",
+          "Mentor Review & Certification",
         ],
       },
     ],
@@ -85,11 +98,11 @@ const programs = [
   {
     title: "SPECIAL BATCH",
     duration: "3 MONTH",
-    image: image,
+    image: three,
     slug: "special-batch",
     about:
       "A holistic program preparing you for fashion weeks, portfolio development, and industry networking.",
-    fees: "₹40,000 – ₹90,000 (with portfolio)",
+    // fees: "₹40,000 – ₹90,000 (with portfolio)",
     overview: "Duration: 3 Months (12 weeks, 3 sessions/week)",
     plan: [
       {
@@ -120,57 +133,25 @@ const programs = [
     ],
   },
   {
-    title: "PERSONAL BATCH",
-    duration: "3 MONTH",
-    image: image,
-    slug: "personal-batch",
-    about: "Build a high-impact professional portfolio with expert guidance.",
-    fees: "₹25,000 – ₹60,000 (+₹10k for Video)",
-    overview: "Duration: 3 Weeks",
-    plan: [
-      {
-        week: "Week 1",
-        topics: [
-          "Styling Consultation & Outfit Planning",
-          "Hair & Makeup Trials",
-        ],
-      },
-      {
-        week: "Week 2",
-        topics: [
-          "Professional Studio Photoshoots (2/3/5 Looks)",
-          "Digital Portfolio Creation",
-        ],
-      },
-      {
-        week: "Week 3",
-        topics: [
-          "Portfolio Review & Corrections",
-          "Final Delivery (Print & Digital Versions)",
-        ],
-      },
-    ],
-  },
-  {
     title: "TALENTXCLUSIVE BATCH",
     duration: "6 MONTH",
-    image: image,
-    slug: "talentxclusive-batch",
-    about:
-      "The ultimate career-launching program, covering all aspects of modelling, acting, and branding.",
-    fees: "₹1,50,000 – ₹1,80,000",
+    image: four,
+    slug: "personal-batch",
+    about: "The ultimate career-launching program, covering all aspects of modelling, acting, and branding.",
+    // fees: "₹25,000 – ₹60,000 (+₹10k for Video)",
     overview: "Duration: 6 Months (24 weeks, 3-4 sessions/week)",
     plan: [
       {
-        months: "Month 1-2",
+        week: "Month 1-2",
         topics: [
           "Modelling Fundamentals & Advanced Ramp Walk",
           "Personal Image Transformation & Styling",
           "Test Shoots for Practice",
+          "Hair & Makeup Trials",
         ],
       },
       {
-        months: "Month 3-4",
+        week: "Month 3-4",
         topics: [
           "Advanced Acting & Theatre Workshops",
           "Social Media Monetisation for Models",
@@ -178,7 +159,7 @@ const programs = [
         ],
       },
       {
-        months: "Month 5-6",
+        week: "Months 5-6",
         topics: [
           "Final Professional Portfolio (5 Looks + Video Add-on)",
           "Media Training for Interviews & Runways",
@@ -188,41 +169,50 @@ const programs = [
     ],
   },
   {
-    title: "MODELLING ESSENTIALS PROGRAM",
-    duration: "15 DAYS",
-    image: image,
-    slug: "modelling-essentials",
-    about: "A short program to build confidence and learn modelling basics.",
-    fees: "₹15,000 – ₹20,000",
-    overview: "Duration: 15 Days (6 sessions)",
+    title: "PAGEANT GROOMING PROGRAM",
+    duration: "2 MONTH",
+    image: five,
+    slug: "talentxclusive-batch",
+    about:
+      "Specially designed for beauty pageant aspirants to excel on and off stage.",
+    // fees: "₹1,50,000 – ₹1,80,000",
+    overview: "Duration: 2 Months (8 weeks, 3 sessions/week",
     plan: [
       {
-        days: "Day 1-2",
+        months: "Week 1-2",
         topics: [
-          "Introduction to Modelling Industry",
-          "Posture & Walk Training",
+          "Ramp Walk Techniques for Pageants",
+          "Personality Development & Etiquette",
         ],
       },
       {
-        days: "Day 3-4",
+        months: "Week 3-4",
         topics: [
-          "Basic Posing Techniques for Camera",
-          "Grooming & Skincare Basics",
+          "Styling & Wardrobe Guidance",
+          "Voice Modulation & Public Speaking",
         ],
       },
       {
-        days: "Day 5-6",
+        months: "Week 5-6",
         topics: [
-          "Trial Shoot (1 Look Optional)",
-          "Mentor Feedback & Certification",
+          "Fitness Coaching & Stage Presence Drills",
+          "Mock Pageant Q&A Sessions",
+        ],
+      },
+      {
+        months: "Week 7-8",
+        topics: [
+          "Pageant Dress Rehearsals",
+          "Professional Photoshoot (2 Looks)",
         ],
       },
     ],
   },
+  
   {
     title: "PORTFOLIO DEVELOPMENT PROGRAM",
     duration: "3 WEEKS",
-    image: image,
+    image: six,
     slug: "portfolio-development",
     about: "Build a high-impact professional portfolio with expert guidance.",
     fees: "₹25,000 – ₹60,000 (+₹10k for Video)",
@@ -247,6 +237,38 @@ const programs = [
         topics: [
           "Portfolio Review & Corrections",
           "Final Delivery (Print & Digital Versions)",
+        ],
+      },
+    ],
+  },
+  {
+    title: "MODELLING ESSENTIALS PROGRAM",
+    duration: "15 DAYS",
+    image: image,
+    slug: "modelling-essentials",
+    about: "A short program to build confidence and learn modelling basics.",
+    // fees: "₹15,000 – ₹20,000",
+    overview: "Duration: 15 Days (6 sessions)",
+    plan: [
+      {
+        days: "Day 1-2",
+        topics: [
+          "Introduction to Modelling Industry",
+          "Posture & Walk Training",
+        ],
+      },
+      {
+        days: "Day 3-4",
+        topics: [
+          "Basic Posing Techniques for Camera",
+          "Grooming & Skincare Basics",
+        ],
+      },
+      {
+        days: "Day 5-6",
+        topics: [
+          "Trial Shoot (1 Look Optional)",
+          "Mentor Feedback & Certification",
         ],
       },
     ],

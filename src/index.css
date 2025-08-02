@@ -7,3 +7,20 @@
       font-family: "Proxima Nova", system-ui, sans-serif;
     }
   }
+
+  /* index.css or App.css */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

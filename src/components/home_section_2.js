@@ -74,18 +74,18 @@ const HomeModelsSection2 = () => {
             <img
               src="/pic6.jpg" // Replace with actual path
               alt="Model 2"
-              className="absolute md:bottom-[-150px] md:left-[250px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
+              className="absolute top-[140px] md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
             />
           </div>
         </div>
 
         {/* Text Content */}
-        <div className="w-ful  l md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl pt-32  font-serif text-[#6b3e2e] mb-6 italic">
+        <div className="w-ful md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl pt-32 font-medium text-[#6b3e2e] mb-6 ">
             NTMGS Models
           </h2>
 
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed mb-6 max-w-xl mx-auto md:mx-0">
+          <p className="text-gray-800 text-justify text-base sm:text-lg md:text-xl leading-relaxed mb-6 max-w-xl mx-auto md:mx-0">
             New Talent Models Grooming School is a leading institute dedicated
             to shaping aspiring models into confident, industry-ready
             professionals. Guided by model mentor Tarun Rajput, our programs
@@ -94,7 +94,7 @@ const HomeModelsSection2 = () => {
             inclusive environment.
           </p>
 
-          <ul className="list-disc list-inside text-gray-800 text-base sm:text-lg space-y-2 max-w-xl mx-auto md:mx-0">
+          <ul className="list-disc list-inside text-gray-800 text-left text-base sm:text-lg space-y-2 max-w-xl mx-auto md:mx-0">
             <li>
               <strong>Expert Training:</strong> Courses designed by industry
               veteran Tarun Rajput for real-world modeling success.

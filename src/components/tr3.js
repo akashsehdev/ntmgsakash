@@ -1,32 +1,30 @@
 import React from "react";
+import tarun_3 from "../assets/tarun_3.JPG"; // in case you want to use it later
 
 function Index() {
     return (
-        <>
-            <div className="container mx-auto pt-6 px-4">
-                <div className="flex flex-wrap">
-                    {/* Image Section - Appears above text on small screens and on the left on larger screens */}
-                    <div className="md:w-2/5 w-full order-1 md:order-2">
-                        <div className="rounded">
-                            <img
-                                src="/hero2.png"
-                                alt="Background"
-                                className="object-contain w-full h-64 md:h-auto"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Text Section - Appears below image on small screens and on the right on larger screens */}
-                    <div className="md:w-3/5 w-full flex md:pb-0 md:pr-6 mb-6 md:mb-0 order-2 md:order-1">
-                        <div className="rounded border-gray-300 text-center p-8 dark:border-gray-700 w-full">
-                            <p className="text-md text-left mt-14 text-gray-600 tracking-wide font-thin text-xl">
-                                <span className="text-4xl">He</span> is a luminary in the world of modeling, revered for his exceptional talent and profound expertise in shaping aspiring models into industry icons. With over a decade of experience as a model mentor, Tarun has honed his craft to perfection, guiding countless individuals towards their dreams of strutting the runways of the world's fashion capitals.
-                            </p>
-                        </div>
+        <div className="container mx-auto my-20 px-4 py-10">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+                
+                {/* Text Section */}
+                <div className="md:w-3/5 w-full">
+                    <div className="bg-white p-2 md:p-20">
+                        <p className="text-gray-700 text-md md:text-xl leading-relaxed tracking-wide font-[Montserrat]">
+                            <span className="md:text-xl text-black font-semibold">He</span> is a luminary in the world of modeling, revered for his exceptional talent and profound expertise in shaping aspiring models into industry icons. With over a decade of experience as a model mentor, Tarun has honed his craft to perfection, guiding countless individuals towards their dreams of strutting the runways of the world's fashion capitals.
+                        </p>
                     </div>
                 </div>
+
+                {/* Image Section */}
+                <div className="md:w-2/5 w-full">
+                    <img
+                        src={tarun_3}
+                        alt="Tarun Rajput"
+                        className="w-full object-top h-64 md:h-[350px] object-cover rounded-2xl shadow-lg"
+                    />
+                </div>
             </div>
-        </>
+        </div>
     );
 }
 

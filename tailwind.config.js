@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar-hide') 
   ],
   fontFamily: {
     'sans': ['ui-sans-serif', 'system-ui'],

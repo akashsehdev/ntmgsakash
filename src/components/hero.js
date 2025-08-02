@@ -43,7 +43,7 @@ export default function Hero() {
         </div>
 
         <div class="flex flex-row items-center mr-12 mt-12 justify-end  h-full">
-          <div class="relative z-10 flex flex-col justify-center  items-center h-full ">
+          <div class="relative z-10 flex flex-col justify-center items-center h-full ">
             <img src="/ntmgslogomobile.png" class="mt-4" alt="Background " />
 
             <br />
