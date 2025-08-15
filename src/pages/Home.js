@@ -12,6 +12,9 @@ import HomeModelsSection2 from "../components/home_section_2";
 import Programs from "../components/programs";
 import FAQSection from "../components/faq";
 import FormPopupCTA from "../components/formpopup";
+import AgencyCarousel from "../components/agencies_associated";
+import SuccessStories from "../components/success_stories";
+import Placements from "../components/placements";
 
 export default function Home() {
   return (
@@ -22,8 +25,11 @@ export default function Home() {
       {/* <Hero /> */}
       <Programs />
       <About />
+      <AgencyCarousel />
       {/* <Course/> */}
       <Modelcarousel />
+      <SuccessStories />
+      <Placements />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
       <FAQSection />

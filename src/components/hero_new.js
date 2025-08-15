@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import { Link, useLocation } from "react-router-dom";
-import HomeBg from "../assets/home_bg.png"; // Default background image
+import HomeBg from "../assets/home_bg2.png"; // Default background image
 import tarun_1 from "../assets/tarun_2.JPG";
+import programs_banner from "../assets/programs/programs_banner.jpeg"; // Example program banner image
 
 const HeroSection = () => {
   const location = useLocation();
@@ -14,8 +15,8 @@ const HeroSection = () => {
     "/tarun-rajput": tarun_1,
     "/work":
       "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=80",
-    "/programspage":
-      "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
+    "/programspage": programs_banner,
+    // "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     "/about":
       "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     "/contact":

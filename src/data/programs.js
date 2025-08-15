@@ -174,7 +174,7 @@ const programs = [
     image: five,
     slug: "talentxclusive-batch",
     about:
-      "Specially designed for beauty pageant aspirants to excel on and off stage.",
+      "Specially designed for beauty pageant aspirants to excel on and off stage. Welcome to the Pageant Training Program at New Talent Models Grooming School, where dreams take center stage and stars are born! Our program is meticulously crafted to empower aspiring pageant contestants with the skills, confidence, and grace needed to shine in the spotlight. Led by industry experts and seasoned professionals, our comprehensive curriculum covers everything from runway etiquette to interview techniques, ensuring each participant is fully equipped to dazzle judges and captivate audiences. Through personalized coaching sessions, mock pageants, and exclusive workshops, we cultivate poise, presence, and polish in every student, nurturing their unique talents and refining their natural beauty.",
     // fees: "₹1,50,000 – ₹1,80,000",
     overview: "Duration: 2 Months (8 weeks, 3 sessions/week",
     plan: [
@@ -208,7 +208,7 @@ const programs = [
       },
     ],
   },
-  
+
   {
     title: "PORTFOLIO DEVELOPMENT PROGRAM",
     duration: "3 WEEKS",

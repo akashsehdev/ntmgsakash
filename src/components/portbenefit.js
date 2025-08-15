@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/dimplekapoor.jpg"; // Adjust the path as necessary
 
 function Index() {
     return (
@@ -9,7 +10,7 @@ function Index() {
                     <div className="w-full lg:w-1/2 flex justify-center">
                         <div className="rounded overflow-hidden h-auto lg:h-96">
                             <img
-                                src='/westmodel4.png'
+                                src={img}
                                 className="object-cover w-full h-64 md:h-full"
                                 alt="model"
                             />
