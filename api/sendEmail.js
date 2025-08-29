@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Only POST requests allowed" });
   }
 
-  const { name, email, phone, message } = req.body;
+  const { name, email, phone, message, courses } = req.body; // added courses
 
   try {
     let transporter = nodemailer.createTransport({
@@ -26,6 +26,7 @@ export default async function handler(req, res) {
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone}</p>
         <p><b>Message:</b> ${message}</p>
+        <p><b>Courses:</b> ${Array.isArray(courses) ? courses.join(", ") : courses || "N/A"}</p>
       `,
     });
 
