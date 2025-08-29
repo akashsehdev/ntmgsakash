@@ -3,7 +3,7 @@ import React from 'react';
 function Index() {
   return (
     <div className="overflow-hidden bg-black font-montserrat text-white ">
-      <div className="2xl:container 2xl:mx-auto py-16 px-4 md:px-6 xl:px-20 flex justify-center items-center">
+      <div className="2xl:container 2xl:mx-auto py-20 px-4 md:px-6 xl:px-20 flex justify-center items-center">
         <div className="flex flex-col items-center text-center justify-center space-y-10 max-w-4xl ">
 
           <h1 className="text-2xl font-serif md:text-5xl font-normal text-white leading-snug">

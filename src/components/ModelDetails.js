@@ -28,16 +28,16 @@ const ModelDetail = () => {
   };
 
   return (
-    <div className="min-h-screen p-8 md:p-10 font-serif text-[#222]">
+    <div className="min-h-screen p-8 md:p-10 font-serif bg-black text-white">
       {/* Name & mgnt */}
-      <h1 className="text-3xl font-bold uppercase tracking-wide text-center">
+      <h1 className="text-3xl pt-[100px] font-bold uppercase tracking-wide text-center">
         {model.name}
       </h1>
       <p className="text-sm uppercase text-gray-500 mt-1 mb-4 text-center">
         NTMGS Management
       </p>
 
-      <div className="max-w-6xl mx-auto bg-white p-2 grid md:grid-cols-4 gap-6">
+      <div className="max-w-6xl mx-auto bg-black p-2 grid md:grid-cols-4 gap-6">
         {/* LEFT */}
         <div className="md:col-span-1 space-y-6 flex flex-col justify-between">
           <div>

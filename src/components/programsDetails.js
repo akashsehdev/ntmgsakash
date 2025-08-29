@@ -4,11 +4,12 @@ import programs from "../data/programs";
 import HeroSection from "./hero_new";
 import Footer1 from "./footer";
 import Navbar from "./navbar";
+import FAQSection from "./faq";
 
 const ProgramDetail = () => {
   const { slug } = useParams();
   const program = programs.find(p => p.slug === slug);
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState("curriculum");
 
   if (!program) {
     return <div className="text-center py-20 text-gray-600">Program not found.</div>;
@@ -41,15 +42,15 @@ const ProgramDetail = () => {
           <div className="flex mb-6 border rounded-lg overflow-hidden max-w-md">
             <button
               className={`flex-1 py-3 px-4 text-center text-sm font-semibold ${activeTab === "overview" ? "bg-primary text-black" : "bg-gray-100 text-gray-700"}`}
-              onClick={() => setActiveTab("overview")}
-            >
-              Overview
-            </button>
-            <button
-              className={`flex-1 py-3 px-4 text-center text-sm font-semibold ${activeTab === "curriculum" ? "bg-primary text-black" : "bg-gray-100 text-gray-700"}`}
               onClick={() => setActiveTab("curriculum")}
             >
               Curriculum
+            </button>
+            <button
+              className={`flex-1 py-3 px-4 text-center text-sm font-semibold ${activeTab === "curriculum" ? "bg-primary text-black" : "bg-gray-100 text-gray-700"}`}
+              onClick={() => setActiveTab("overview")}
+            >
+              Overview
             </button>
           </div>
 
@@ -58,7 +59,7 @@ const ProgramDetail = () => {
             <div>
               <p className="text-base text-gray-700 mb-6">{program.about}</p>
               <p className="text-sm font-medium text-gray-600 bg-gray-100 inline-block px-4 py-2 rounded">{program.overview}</p>
-              <p className="text-lg font-semibold mt-4">Fees: <span className="text-primary">{program.fees}</span></p>
+              {/* <p className="text-lg font-semibold mt-4">Fees: <span className="text-primary">{program.fees}</span></p> */}
             </div>
           )}
 
@@ -76,7 +77,10 @@ const ProgramDetail = () => {
               ))}
             </div>
           )}
+
+
         </div>
+        <FAQSection />
       </section>
       <Footer1 />
     </>

@@ -67,21 +67,21 @@ const HomeModelsSection2 = () => {
         <div className="w-full pt-20 md:pt-0 md:w-1/2 relative lg:flex items-center justify-center md:order-none">
           <div className="relative w-full md:w-1/2 flex justify-center">
             <img
-              src="/pic5.jpg" // Replace with actual path
+              src="/pic7.jpg" // Replace with actual path
               alt="Model 1"
-              className="w-64 md:w-80 lg:w-96 object-cover shadow-lg"
+              className="w-64 md:w-80 rounded-2xl lg:w-96 object-cover shadow-lg"
             />
             <img
-              src="/pic6.jpg" // Replace with actual path
+              src="/pic8.jpg" // Replace with actual path
               alt="Model 2"
-              className="absolute top-[140px] md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
+              className="absolute top-[140px] rounded-2xl md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
             />
           </div>
         </div>
 
         {/* Text Content */}
         <div className="w-ful md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl pt-32 font-medium text-[#6b3e2e] mb-6 ">
+          <h2 className="text-3xl sm:text-4xl font-serif md:text-5xl pt-32 font-normal text-[#6b3e2e] mb-6 ">
             NTMGS Models
           </h2>
 

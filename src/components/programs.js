@@ -5,7 +5,7 @@ import programs from "../data/programs";
 const Programs = () => {
   return (
     <section className="py-20 px-6 md:px-44 bg-[grey]/5">
-      <h2 className=" text-2xl md:text-4xl font-semibold text-center mb-6">Our Programs</h2>
+      <h2 className=" text-2xl md:text-6xl font-normal font-serif text-center mb-6">Our Programs</h2>
       <p className="text-center text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-14">
         At NTMGS Talent Management, we empower diverse talent to shine in the
         fashion and modeling world. Our inclusive programs support all body

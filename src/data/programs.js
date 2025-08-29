@@ -1,10 +1,11 @@
 import image from "../assets/test2.jpeg";
-import one from "../assets/programs/one.jpg";
-import two from "../assets/programs/two.jpg";
-import three from "../assets/programs/three.jpg";
-import four from "../assets/programs/four.jpg";
-import five from "../assets/programs/five.jpg";
-import six from "../assets/programs/six.jpeg";
+import one from "../assets/programs/program1.jpeg";
+import two from "../assets/programs/program2.jpeg";
+import three from "../assets/programs/program3.jpeg";
+import four from "../assets/programs/program4.jpeg";
+import five from "../assets/programs/program5.jpeg";
+import six from "../assets/programs/program6.jpeg";
+import seven from "../assets/programs/program7.jpeg";
 
 const programs = [
   {
@@ -244,7 +245,7 @@ const programs = [
   {
     title: "MODELLING ESSENTIALS PROGRAM",
     duration: "15 DAYS",
-    image: image,
+    image: seven,
     slug: "modelling-essentials",
     about: "A short program to build confidence and learn modelling basics.",
     // fees: "₹15,000 – ₹20,000",
