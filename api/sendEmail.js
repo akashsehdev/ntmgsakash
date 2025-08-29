@@ -8,19 +8,17 @@ export default async function handler(req, res) {
   const { name, email, phone, message } = req.body;
 
   try {
-    // Configure transporter (use Gmail, SendGrid, or SMTP)
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.ADMIN_EMAIL, // Your admin email
-        pass: process.env.ADMIN_PASS,  // App password or SMTP pass
+        user: process.env.ADMIN_EMAIL,
+        pass: process.env.ADMIN_PASS, // Gmail App Password
       },
     });
 
-    // Mail options
     await transporter.sendMail({
       from: `"Website Form" <${process.env.ADMIN_EMAIL}>`,
-      to: process.env.ADMIN_EMAIL, // Admin will receive form details
+      to: process.env.ADMIN_EMAIL,
       subject: "New Form Submission",
       html: `
         <h3>New Submission Received</h3>
@@ -33,7 +31,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true, message: "Mail sent successfully" });
   } catch (error) {
-    console.error(error);
+    console.error("Mail error:", error);
     return res.status(500).json({ success: false, error: error.message });
   }
 }

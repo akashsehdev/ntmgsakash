@@ -305,6 +305,7 @@ const Registercontact = ({ insidePopup = false }) => {
           email,
           phone,
           message: about,
+          courses: courses.join(", "),
         }),
       });
 
