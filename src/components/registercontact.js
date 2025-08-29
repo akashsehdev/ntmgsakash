@@ -297,7 +297,7 @@ const Registercontact = ({ insidePopup = false }) => {
     try {
       await addDoc(collection(db, "registrations"), register);
 
-      await fetch("api/sendEmail", {
+      await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

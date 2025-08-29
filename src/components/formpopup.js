@@ -96,7 +96,7 @@ const FormPopupCTA = () => {
                                 className="absolute inset-0 rounded-lg bg-cover bg-center"
                                 style={{ backgroundImage: "url('/pic5.jpg')" }} // replace with your image
                             ></div>
-                            <div className="absolute inset-0 rounded-lg bg-black/40"></div> 
+                            <div className="absolute inset-0 rounded-lg bg-black/70"></div> 
                             {/* 👆 overlay on top of image */}
 
                             {/* Popup Content */}
