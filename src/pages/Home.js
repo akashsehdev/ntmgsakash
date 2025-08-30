@@ -33,7 +33,6 @@ export default function Home() {
       {/* <Teamsection /> */}
       <Testimonialcarousel />
       <FAQSection />
-
       {/* <div className="flex justify-center text-center md:gap-14 col-span-2"> */}
       {/* mobile */}
       {/* <div className="md:hidden">
