@@ -16,6 +16,8 @@ const HeroSection = () => {
     "/work":
       "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=80",
     "/programspage": programs_banner,
+    "/talent": "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
+    "/register": "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     // "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     "/about":
       "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
@@ -26,8 +28,17 @@ const HeroSection = () => {
     "/": {
       title: "Welcome to NTMGS World",
       description: "Empowering models with confidence and style",
-
+      a: (
+        <>
+          <b>10000+</b> students trained <br />
+          <b>10+</b> years of experience mentor <br />
+          <b>100+</b> batches completed <br />
+          <b>Provide career guidance</b>
+        </>
+      ),
     },
+
+
     "/talent": {
       title: "Discover Raw Talent",
       description: "Where potential meets opportunity in the world of modeling.",
@@ -113,12 +124,9 @@ const HeroSection = () => {
         <p className="mt-2 md:mt-4 font-bold text-md md:text-[20px] drop-shadow-md">
           "{currentContent.description}"
         </p>
-        <br/>
+        <br />
         <p className="mt-2 md:mt-4 text-md md:text-xl drop-shadow-md">
-          <b>10000+</b> students trained <br />
-          <b>10+</b> years of experience mentor <br />
-          <b>100+</b> baches completed <br />
-          <b>Provide career guidance</b>
+          {currentContent.a}
         </p>
 
         <Link to="/register">

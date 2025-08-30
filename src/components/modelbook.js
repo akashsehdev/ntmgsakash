@@ -1,41 +1,125 @@
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+
+
+// export default function ModelBook({ models = [], category }) {
+//     const navigate = useNavigate();
+
+//     if (!models || models.length === 0) {
+//         return <p className="text-center py-10">No models found.</p>;
+//     }
+
+//     return (
+//         <div className="w-full bg-black px-32 py-20">
+//             <h2 className="text-center font-serif text-white text-6xl font-medium mb-10">
+//                 Our Talents
+//             </h2>
+
+//             {/* Grid */}
+//             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 md:px-10">
+//                 {models.map((model) => (
+//                     <div
+//                         key={model.id}
+//                         onClick={() => navigate(`/talent/${category}/${model.id}`)}
+//                         className="cursor-pointer group"
+//                     >
+//                         <div className="overflow-hidden border-4 border-white">
+//                             <img
+//                                 src={model.image}
+//                                 alt={model.name}
+//                                 className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+//                             />
+//                         </div>
+//                         <p className="mt-2 text-center text-white font-medium">
+//                             {model.name}
+//                         </p>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// }
+
+
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+
+// export default function ModelBook({ models = [], category }) {
+//   const navigate = useNavigate();
+
+//   if (!models || models.length === 0) {
+//     return <p className="text-center py-10">No models found.</p>;
+//   }
+
+//   return (
+//     <div className="w-full bg-black px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-10 md:py-16 lg:py-20">
+//       <h2 className="text-center font-serif text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-8 md:mb-10">
+//         Our Talents
+//       </h2>
+
+//       {/* Grid */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+//         {models.map((model) => (
+//           <div
+//             key={model.id}
+//             onClick={() => navigate(`/talent/${category}/${model.id}`)}
+//             className="cursor-pointer group"
+//           >
+//             <div className="overflow-hidden border-2 sm:border-4 border-white rounded-lg">
+//               <img
+//                 src={model.image}
+//                 alt={model.name}
+//                 className="w-full h-80 sm:h-72 md:h-80 lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+//               />
+//             </div>
+//             <p className="mt-2 text-center text-white font-medium text-sm sm:text-base">
+//               {model.name}
+//             </p>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 export default function ModelBook({ models = [], category }) {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    if (!models || models.length === 0) {
-        return <p className="text-center py-10">No models found.</p>;
-    }
+  if (!models || models.length === 0) {
+    return <p className="text-center py-10">No models found.</p>;
+  }
 
-    return (
-        <div className="w-full bg-black px-32 py-20">
-            <h2 className="text-center font-serif text-white text-6xl font-medium mb-10">
-                Our Talents
-            </h2>
+  return (
+    <div className="w-full bg-black px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-10 md:py-16 lg:py-20">
+      <h2 className="text-center font-serif text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-8 md:mb-10">
+        Our Talents
+      </h2>
 
-            {/* Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 md:px-10">
-                {models.map((model) => (
-                    <div
-                        key={model.id}
-                        onClick={() => navigate(`/talent/${category}/${model.id}`)}
-                        className="cursor-pointer group"
-                    >
-                        <div className="overflow-hidden border-4 border-white">
-                            <img
-                                src={model.image}
-                                alt={model.name}
-                                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <p className="mt-2 text-center text-white font-medium">
-                            {model.name}
-                        </p>
-                    </div>
-                ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+        {models.map((model) => (
+          <div
+            key={model.id}
+            onClick={() => navigate(`/talent/${category}/${model.id}`)}
+            className="cursor-pointer group"
+          >
+            <div className="overflow-hidden border-2 sm:border-4 border-white rounded-lg">
+              {/* Display the main image */}
+              <img
+                src={model.images.find((img) => img.type === "main").src}
+                alt={model.name}
+                className="w-full h-80 sm:h-72 md:h-80 lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
-        </div>
-    );
+            <p className="mt-2 text-center text-white font-medium text-sm sm:text-base">
+              {model.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
