@@ -91,18 +91,18 @@ const FormPopupCTA = () => {
     return (
         <>
             {/* Floating Button */}
-            {/* <button
+            <button
                 onClick={() => setShowPopup(true)}
                 className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-3 rounded-full shadow-lg hover:bg-gray-800 transition"
             >
                 Register Now
-            </button> */}
-            <button
+            </button>
+            {/* <button
                 onClick={() => setShowPopup(true)}
                 className="fixed bottom-6 right-6 z-40 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition"
             >
                 <FaRegEdit size={22} />
-            </button>
+            </button> */}
 
             {/* Modal Popup */}
             {showPopup &&

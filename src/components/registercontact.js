@@ -351,7 +351,7 @@ const Registercontact = ({ insidePopup = false }) => {
     <div
       className={`rounded-lg ${insidePopup
         ? "bg-transparent text-white" // popup → transparent + white text
-        : "bg-white text-black shadow-md" // normal page → white background + dark text
+        : "bg-white text-black shadow-md md:mx-20" // normal page → white background + dark text
         }`}
     >
       <form
@@ -381,7 +381,7 @@ const Registercontact = ({ insidePopup = false }) => {
               onChange={inputHandler}
               className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-sm ${insidePopup
                 ? "bg-white/20 border-gray-400 text-white placeholder-gray-300"
-                : "border-gray-300 text-black placeholder-gray-400"
+                : "border-gray-300 text-black  placeholder-gray-400"
                 }`}
               placeholder="John Doe"
               required
@@ -533,7 +533,7 @@ const Registercontact = ({ insidePopup = false }) => {
             type="submit"
             className={`text-sm px-6 py-2 rounded-md transition ${insidePopup
               ? "bg-white text-black hover:bg-gray-200"
-              : "bg-black text-white hover:bg-gray-800"
+              : "bg-black text-white md:text-2xl px-20 hover:bg-gray-800"
               }`}
           >
             Register Now

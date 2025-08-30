@@ -11,6 +11,7 @@ import Registercontact from "../components/registercontact";
 // import Aboutlearn from '../components/aboutlearn'
 import Hero from "../components/hero";
 import HeroSection from "../components/hero_new";
+import FAQSection from "../components/faq";
 
 export default function RegisterPage() {
   return (
@@ -18,9 +19,10 @@ export default function RegisterPage() {
       {/* <Header /> */}
       {/* <Registerhero /> */}
       <HeroSection />
-      <div className="bg-grey-100 py-10 px-2 md:px-[600px]">
+      <div className="bg-grey-100 py-10 px-2 md:px-[200px]">
         <Registercontact />
       </div>
+      <FAQSection/>
       <Footer1 />
     </>
   );
