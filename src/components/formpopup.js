@@ -53,54 +53,78 @@
 //     );
 // };
 
-// export default FormPopupCTA;
 import React, { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { createPortal } from "react-dom";
 import Registercontact from "../components/registercontact";
+import { FaRegEdit } from "react-icons/fa";
 
 const FormPopupCTA = () => {
     const [showPopup, setShowPopup] = useState(false);
 
     // Show popup on first load
+    // useEffect(() => {
+    //     const timer = setTimeout(() => setShowPopup(true), 1000);
+    //     return () => clearTimeout(timer);
+    // }, []);
+
+    //show once per user session only
     useEffect(() => {
-        const timer = setTimeout(() => setShowPopup(true), 1000);
-        return () => clearTimeout(timer);
+        const hasShown = sessionStorage.getItem("hasShownPopup");
+        if (!hasShown) {
+            const timer = setTimeout(() => {
+                setShowPopup(true);
+                sessionStorage.setItem("hasShownPopup", "true");
+            }, 1000);
+            return () => clearTimeout(timer);
+        }
     }, []);
 
-    // Re-show popup every 2 minutes
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setShowPopup(true);
-        }, 2 * 60 * 1000); // 2 mins
-        return () => clearInterval(interval);
-    }, []);
+    // // Re-show popup every 2 minutes
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setShowPopup(true);
+    //     }, 2 * 60 * 1000); // 2 mins
+    //     return () => clearInterval(interval);
+    // }, []);
 
     return (
         <>
             {/* Floating Button */}
-            <button
+            {/* <button
                 onClick={() => setShowPopup(true)}
                 className="fixed bottom-6 right-6 z-40 bg-black text-white px-4 py-3 rounded-full shadow-lg hover:bg-gray-800 transition"
             >
                 Register Now
+            </button> */}
+            <button
+                onClick={() => setShowPopup(true)}
+                className="fixed bottom-6 right-6 z-40 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition"
+            >
+                <FaRegEdit size={22} />
             </button>
 
             {/* Modal Popup */}
             {showPopup &&
                 createPortal(
                     <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center px-4">
-                        <div className="relative rounded-lg shadow-lg max-w-2xl w-full max-h-[95vh] overflow-y-auto">
+                        <div
+                            className="
+      relative rounded-lg shadow-lg 
+      w-full max-w-2xl 
+      max-h-[95vh] 
+      overflow-hidden
+    "
+                        >
                             {/* Background image with overlay */}
                             <div
                                 className="absolute inset-0 rounded-lg bg-cover bg-center"
-                                style={{ backgroundImage: "url('/pic5.jpg')" }} // replace with your image
+                                style={{ backgroundImage: "url('/apala.jpg')" }}
                             ></div>
-                            <div className="absolute inset-0 rounded-lg bg-black/70"></div> 
-                            {/* 👆 overlay on top of image */}
+                            <div className="absolute inset-0 rounded-lg bg-black/80"></div>
 
-                            {/* Popup Content */}
-                            <div className="relative z-10 p-6">
+                            {/* Scrollable content sits on top */}
+                            <div className="relative z-10 max-h-[95vh] overflow-y-auto p-4 sm:p-6">
                                 {/* Close Button */}
                                 <button
                                     onClick={() => setShowPopup(false)}
@@ -114,6 +138,7 @@ const FormPopupCTA = () => {
                             </div>
                         </div>
                     </div>,
+
                     document.body
                 )}
         </>

@@ -30,7 +30,7 @@ export default function AgencyCarousel() {
             <div className="2xl:container 2xl:mx-auto py-16 px-4 md:px-6 xl:px-20 flex justify-center items-center">
                 <div className="flex flex-col items-center justify-center space-y-10 max-w-4xl text-center">
 
-                    <h1 className="text-2xl font-serif md:text-6xl font-normal text-gray-900 leading-snug">
+                    <h1 className="text-3xl font-serif md:text-6xl font-normal text-gray-900 leading-snug">
                         Agencies Associated
                     </h1>
                     <p className="text-lg md:text-xl text-justify leading-relaxed tracking-wide font-light">

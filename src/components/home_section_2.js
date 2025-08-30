@@ -59,6 +59,8 @@
 // export default HomeModelsSection2;
 
 import React from "react";
+import topimg from "../assets/talents/pic2.jpg";
+import bottomimg from "../assets/talents/pic8.JPG";
 
 const HomeModelsSection2 = () => {
   return (
@@ -67,12 +69,12 @@ const HomeModelsSection2 = () => {
         <div className="w-full pt-20 md:pt-0 md:w-1/2 relative lg:flex items-center justify-center md:order-none">
           <div className="relative w-full md:w-1/2 flex justify-center">
             <img
-              src="/pic7.jpg" // Replace with actual path
+              src={topimg} // Replace with actual path
               alt="Model 1"
               className="w-64 md:w-80 rounded-2xl lg:w-96 object-cover shadow-lg"
             />
             <img
-              src="/pic8.jpg" // Replace with actual path
+              src={bottomimg} // Replace with actual path
               alt="Model 2"
               className="absolute top-[140px] rounded-2xl md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
             />

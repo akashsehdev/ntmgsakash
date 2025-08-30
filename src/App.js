@@ -13,11 +13,17 @@ import ProgramDetail from "./components/programsDetails";
 import ProgramsPage from "./pages/ProgramsPage";
 import Talent from "./pages/Talent";
 import ModelsDetailsPage from "./pages/ModelsDetailsPage";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
+import FormPopupCTA from "./components/formpopup";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
+        <ScrollToTopOnRouteChange />
+        <FormPopupCTA />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<AboutPage />} />
@@ -26,7 +32,7 @@ function App() {
           <Route exact path="/pageant-training" element={<PageantTraining />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
           <Route exact path="/talent" element={<Talent />} />
-          <Route path="/talent/:category/:id" element={<ModelsDetailsPage/>} />
+          <Route path="/talent/:category/:id" element={<ModelsDetailsPage />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/register" element={<Register />} />
           <Route path="/programspage" element={<ProgramsPage />} />

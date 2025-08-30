@@ -28,7 +28,7 @@ export default function Placements() {
                     Working for Brands after Placements
 
                     </h1>
-                    <p className="text-lg md:text-xl text-justify leading-relaxed tracking-wide font-light">
+                    <p className="text-md md:text-xl text-center leading-relaxed tracking-wide font-light">
                     Models have worked for all top brands in India
                     </p>
 

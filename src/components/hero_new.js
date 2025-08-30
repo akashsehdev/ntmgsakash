@@ -26,6 +26,7 @@ const HeroSection = () => {
     "/": {
       title: "Welcome to NTMGS World",
       description: "Empowering models with confidence and style",
+
     },
     "/talent": {
       title: "Discover Raw Talent",
@@ -94,7 +95,7 @@ const HeroSection = () => {
   // );
   return (
     <div
-      className="relative h-[550px] md:h-screen w-full bg-fixed bg-cover bg-top transition-all duration-500"
+      className="relative h-[550px] justify-center md:h-screen w-full bg-fixed bg-cover bg-top transition-all duration-500"
       style={{
         backgroundImage: `url('${bgImage}')`,
       }}
@@ -106,11 +107,18 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute top-1/3 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-        <h1 className="text-2xl md:text-5xl font-bold drop-shadow-lg">
+        <h1 className="text-2xl font-serif md:text-5xl font-bold drop-shadow-lg">
           {currentContent.title}
         </h1>
+        <p className="mt-2 md:mt-4 font-bold text-md md:text-[20px] drop-shadow-md">
+          "{currentContent.description}"
+        </p>
+        <br/>
         <p className="mt-2 md:mt-4 text-md md:text-xl drop-shadow-md">
-          {currentContent.description}
+          <b>10000+</b> students trained <br />
+          <b>10+</b> years of experience mentor <br />
+          <b>100+</b> baches completed <br />
+          <b>Provide career guidance</b>
         </p>
 
         <Link to="/register">

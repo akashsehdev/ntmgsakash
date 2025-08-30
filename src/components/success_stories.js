@@ -29,13 +29,13 @@ export default function SuccessStories() {
     return (
         <div className="w-full overflow-hidden bg-white py-8">
 
-            <div className="2xl:container 2xl:mx-auto py-16 px-4 md:px-6 xl:px-20 flex justify-center items-center">
+            <div className="2xl:container 2xl:mx-auto  px-4 md:px-6 xl:px-20 flex justify-center items-center">
                 <div className="flex flex-col items-center justify-center max-w-4xl text-center">
 
-                    <h1 className="text-2xl font-serif md:text-6xl pb-3 font-normal text-gray-900 leading-snug">
+                    <h1 className="text-3xl font-serif md:text-6xl pb-3 font-normal text-gray-900 leading-snug">
                         Success Stories
                     </h1>
-                    <p className="text-lg md:text-xl text-justify leading-relaxed tracking-wide font-light">
+                    <p className="text-lg md:text-xl pb-12 text-justify leading-relaxed tracking-wide font-light">
                         Placements after mentorship
                     </p>
 
