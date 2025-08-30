@@ -18,7 +18,7 @@ export default function RegisterPage() {
       {/* <Header /> */}
       {/* <Registerhero /> */}
       <HeroSection />
-      <div className="bg-gray-100 py-10 px-4">
+      <div className="bg-grey-100 py-10 px-2 md:px-[600px]">
         <Registercontact />
       </div>
       <Footer1 />

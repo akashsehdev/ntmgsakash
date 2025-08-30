@@ -328,14 +328,23 @@ const Registercontact = ({ insidePopup = false }) => {
   };
 
 
+  // const courseList = [
+  //   "Runway Training",
+  //   "Photoshoot Basics",
+  //   "Grooming & Etiquette",
+  //   "Fashion Styling",
+  //   "Fitness & Nutrition",
+  //   "Model Portfolio Building",
+  //   "Camera Confidence",
+  // ];
   const courseList = [
-    "Runway Training",
-    "Photoshoot Basics",
-    "Grooming & Etiquette",
-    "Fashion Styling",
-    "Fitness & Nutrition",
-    "Model Portfolio Building",
-    "Camera Confidence",
+    "Modelling Program",
+    "Group Batch Program",
+    "Special Batch",
+    "Talent Exclusive Batch",
+    "Pageant Grooming Program",
+    "Portfolio Development Program",
+    "Modelling Essentials Program",
   ];
 
   return (

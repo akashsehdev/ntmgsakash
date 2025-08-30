@@ -159,41 +159,280 @@
 // }
 
 
-import React from "react";
+// import React from "react";
+
+// export default function Home() {
+//     return (
+//         <>
+//             <div className="bg-[#ededed] py-10">
+//                 {/* Header Section */}
+//                 <div className="relative py-5 md:py-16 bg-gradient-to-b  flex justify-center items-center">
+//                     <h1 className="text-2xl sm:text-2xl lg:text-5xl font-bold leading-10 text-black text-center">
+//                         Shoot for Renowned Designers
+//                     </h1>
+//                 </div>
+
+//                 {/* Designers List */}
+//                 <div className="container mx-auto px-4">
+//                     <div className="flex gap-6 overflow-x-auto md:flex-wrap md:justify-center no-scrollbar">
+//                         {[
+//                             "Bharat Reshma",
+//                             "Harish K Vasisth",
+//                             "Archana Kochar",
+//                             "Siddharth Tytler",
+//                             "Dimple Kapoor",
+//                         ].map((designer, idx) => (
+//                             <div
+//                                 key={idx}
+//                                 className="min-w-[220px] my-5 md:min-w-[250px] bg-white shadow-md rounded-xl p-6 flex items-center justify-center"
+//                             >
+//                                 <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+//                                     {designer}
+//                                 </p>
+//                             </div>
+//                         ))}
+//                     </div>
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }
+
+
+// import React from "react";
+
+// export default function Home() {
+//     const designers = [
+//         "Bharat Reshma",
+//         "Harish K Vasisth",
+//         "Archana Kochar",
+//         "Siddharth Tytler",
+//         "Dimple Kapoor",
+//     ];
+
+//     return (
+//         <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-16 relative overflow-hidden">
+//             {/* Decorative Circles */}
+//             <div className="absolute -top-20 -left-10 w-72 h-72 bg-pink-200 rounded-full opacity-30 blur-3xl"></div>
+//             <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-purple-200 rounded-full opacity-30 blur-3xl"></div>
+
+//             {/* Header Section */}
+//             <div className="relative text-center mb-12">
+//                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+//                     Shoot for Renowned Designers
+//                 </h1>
+//                 <p className="mt-4 text-gray-600 text-base md:text-lg">
+//                     Join hands with the industry’s top talents and make your mark on the runway
+//                 </p>
+//             </div>
+
+//             {/* Designers List */}
+//             <div className="container mx-auto px-4">
+//                 <div className="flex gap-6 overflow-x-auto md:overflow-x-visible md:flex-wrap no-scrollbar">
+//                     {designers.map((designer, idx) => (
+//                         <div
+//                             key={idx}
+//                             className="min-w-[220px] md:min-w-[250px] bg-white rounded-3xl p-6 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer relative overflow-hidden"
+//                         >
+//                             <p className="text-gray-800 font-semibold text-center text-base md:text-lg">
+//                                 {designer}
+//                             </p>
+//                             {/* Glow effect */}
+//                             <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 opacity-20 rounded-3xl blur-xl pointer-events-none"></div>
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+
+
+// import React, { useState } from "react";
+// import bharat from "../assets/ashish.jpg";
+// import harish from "../assets/ashish.jpg";
+// import archana from "../assets/ashish.jpg";
+// import siddharth from "../assets/ashish.jpg";
+// import dimple from "../assets/ashish.jpg";
+
+// export default function Home() {
+//     const designers = [
+//         { name: "Bharat Reshma", img: bharat },
+//         { name: "Harish K Vasisth", img: harish },
+//         { name: "Archana Kochar", img: archana },
+//         { name: "Siddharth Tytler", img: siddharth },
+//         { name: "Dimple Kapoor", img: dimple },
+//     ];
+
+//     const [current, setCurrent] = useState(0);
+
+//     // Mobile: handle next card
+//     const nextCard = () => {
+//         setCurrent((prev) => (prev + 1) % designers.length);
+//     };
+
+//     const prevCard = () => {
+//         setCurrent((prev) => (prev - 1 + designers.length) % designers.length);
+//     };
+
+//     return (
+//         <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-16 relative overflow-hidden">
+//             {/* Decorative Background */}
+//             <div className="absolute -top-20 -left-10 w-72 h-72 bg-pink-200 rounded-full opacity-30 blur-3xl"></div>
+//             <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-purple-200 rounded-full opacity-30 blur-3xl"></div>
+
+//             {/* Header */}
+//             <div className="text-center mb-12">
+//                 <h1 className="text-2xl font-serif sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+//                     Shoot for Renowned Designers
+//                 </h1>
+//                 <p className="mt-4 text-gray-600 text-base md:text-lg">
+//                     Join hands with the industry’s top talents and make your mark on the runway
+//                 </p>
+//             </div>
+
+//             {/* Desktop Grid */}
+//             <div className="hidden md:flex container mx-auto gap-8 flex-wrap justify-center">
+//                 {designers.map((designer, idx) => (
+//                     <div
+//                         key={idx}
+//                         className="relative bg-white rounded-3xl shadow-lg p-6 w-60 flex flex-col items-center transition-transform hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden"
+//                     >
+//                         <img
+//                             src={designer.img}
+//                             alt={designer.name}
+//                             className="w-32 h-32 object-cover rounded-full mb-4"
+//                         />
+//                         <p className="text-gray-800 font-semibold text-center text-lg">
+//                             {designer.name}
+//                         </p>
+//                         <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 opacity-20 rounded-3xl blur-xl pointer-events-none"></div>
+//                     </div>
+//                 ))}
+//             </div>
+
+//             {/* Mobile Card Switch */}
+//             <div className="md:hidden container mx-auto relative flex items-center justify-center">
+//                 <div className="w-72 bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center transition-all duration-500">
+//                     <img
+//                         src={designers[current].img}
+//                         alt={designers[current].name}
+//                         className="w-32 h-32 object-cover rounded-full mb-4"
+//                     />
+//                     <p className="text-gray-800 font-semibold text-center text-lg">
+//                         {designers[current].name}
+//                     </p>
+//                     <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 opacity-20 rounded-3xl blur-xl pointer-events-none"></div>
+//                 </div>
+
+//                 {/* Navigation Buttons */}
+//                 <button
+//                     onClick={prevCard}
+//                     className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white"
+//                 >
+//                     ◀
+//                 </button>
+//                 <button
+//                     onClick={nextCard}
+//                     className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white"
+//                 >
+//                     ▶
+//                 </button>
+//             </div>
+//         </div>
+//     );
+// }
+
+
+import React, { useState } from "react";
+import bharat from "../assets/ashish.jpg";
+import harish from "../assets/ashish.jpg";
+import archana from "../assets/ashish.jpg";
+import siddharth from "../assets/ashish.jpg";
+import dimple from "../assets/ashish.jpg";
 
 export default function Home() {
+    const designers = [
+        { name: "Bharat Reshma", img: bharat },
+        { name: "Harish K Vasisth", img: harish },
+        { name: "Archana Kochar", img: archana },
+        { name: "Siddharth Tytler", img: siddharth },
+        { name: "Dimple Kapoor", img: dimple },
+    ];
+
+    const [current, setCurrent] = useState(0);
+    const nextCard = () => setCurrent((prev) => (prev + 1) % designers.length);
+    const prevCard = () => setCurrent((prev) => (prev - 1 + designers.length) % designers.length);
+
     return (
-        <>
-            <div className="bg-[#ededed] py-10">
-                {/* Header Section */}
-                <div className="relative py-5 md:py-16 bg-gradient-to-b  flex justify-center items-center">
-                    <h1 className="text-2xl sm:text-2xl lg:text-5xl font-bold leading-10 text-black text-center">
-                        Shoot for Renowned Designers
-                    </h1>
+        <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-16 relative overflow-hidden">
+            {/* Background shapes */}
+            <div className="absolute -top-20 -left-10 w-72 h-72 bg-pink-200 rounded-full opacity-30 blur-3xl"></div>
+            <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-purple-200 rounded-full opacity-30 blur-3xl"></div>
+
+            {/* Header */}
+            <div className="text-center mb-12">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                    Shoot for Renowned Designers
+                </h1>
+                <p className="mt-4 text-gray-600 text-base md:text-lg">
+                    Join hands with the industry’s top talents and make your mark on the runway
+                </p>
+            </div>
+
+            {/* Desktop Grid */}
+            <div className="hidden md:flex container mx-auto gap-8 flex-wrap justify-center">
+                {designers.map((designer, idx) => (
+                    <div
+                        key={idx}
+                        className="relative bg-white rounded-3xl shadow-lg p-6 w-60 flex flex-col items-center transition-transform hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden"
+                    >
+                        {/* Polygon / slanted image */}
+                        <div className="w-32 h-32 mb-4 overflow-hidden rounded-3xl transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
+                            <img
+                                src={designer.img}
+                                alt={designer.name}
+                                className="w-full h-full object-cover clip-[polygon(0_0,100%_0,100%_85%,0%_100%)]"
+                            />
+                        </div>
+                        <p className="text-gray-800 font-semibold text-center text-lg">
+                            {designer.name}
+                        </p>
+                        <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 opacity-20 rounded-3xl blur-xl pointer-events-none"></div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Mobile Card Switch */}
+            <div className="md:hidden container mx-auto relative flex items-center justify-center">
+                <div className="w-72 bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center transition-all duration-500">
+                    <div className="w-32 h-32 mb-4 overflow-hidden rounded-3xl transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
+                        <img
+                            src={designers[current].img}
+                            alt={designers[current].name}
+                            className="w-full h-full object-cover clip-[polygon(0_0,100%_0,100%_85%,0%_100%)]"
+                        />
+                    </div>
+                    <p className="text-gray-800 font-semibold text-center text-lg">
+                        {designers[current].name}
+                    </p>
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 opacity-20 rounded-3xl blur-xl pointer-events-none"></div>
                 </div>
 
-                {/* Designers List */}
-                <div className="container mx-auto px-4">
-                    <div className="flex gap-6 overflow-x-auto md:flex-wrap md:justify-center no-scrollbar">
-                        {[
-                            "Bharat Reshma",
-                            "Harish K Vasisth",
-                            "Archana Kochar",
-                            "Siddharth Tytler",
-                            "Dimple Kapoor",
-                        ].map((designer, idx) => (
-                            <div
-                                key={idx}
-                                className="min-w-[220px] my-5 md:min-w-[250px] bg-white shadow-md rounded-xl p-6 flex items-center justify-center"
-                            >
-                                <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-                                    {designer}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                {/* Navigation Buttons */}
+                <button
+                    onClick={prevCard}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white"
+                >
+                    ◀
+                </button>
+                <button
+                    onClick={nextCard}
+                    className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white"
+                >
+                    ▶
+                </button>
             </div>
-        </>
+        </div>
     );
 }

@@ -10,8 +10,8 @@ const men = [
     name: "Ashish",
     images: [
       { type: "main", src: pic1, label: "Main Image" },
-      { type: "side", src: pic1, label: "BOTTEGA VENETA CAMPAIGN 23" },
-      { type: "right", src: pic1, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "side", src: pic2, label: "BOTTEGA VENETA CAMPAIGN 23" },
+      { type: "right", src: pic3, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: pic1, label: "ELLE ITALY MARCH 2023", credit: "Federico Porciolini" },
     ],
     bio: "Ashish began modelling at age 18. He was signed by Viva Model Management in Milan. His debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
