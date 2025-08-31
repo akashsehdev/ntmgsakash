@@ -1,8 +1,6 @@
 import pic1 from "../assets/pic5.jpg";
 import pic2 from "../assets/pic6.jpg";
 import pic3 from "../assets/pic7.JPG";
-import pic4 from "../assets/pic8.JPG";
-import pic5 from "../assets/pic9.JPG";
 
 const men = [
   {

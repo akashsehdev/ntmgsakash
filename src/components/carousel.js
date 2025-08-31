@@ -339,7 +339,7 @@ export default function Carousel() {
   const dragRef = useRef(false);
 
   const models = [
-    ...men.map((m) => ({ ...m, category: "men" })),
+    // ...men.map((m) => ({ ...m, category: "men" })),
     ...women.map((m) => ({ ...m, category: "women" })),
     ...boys.map((m) => ({ ...m, category: "boys" })),
     ...girls.map((m) => ({ ...m, category: "girls" })),
@@ -395,7 +395,6 @@ export default function Carousel() {
                   {model.name}
                 </h2>
               </div>
-
 
               {/* Image */}
               <img
