@@ -16,18 +16,18 @@ export default function Tarun() {
   return (
     <>
 
-     {/* <Header />
+      {/* <Header />
       */}
-      <HeroSection/>
+      <HeroSection />
       {/* <Hero /> */}
-      <Tr1/>
-      <Tr2/>
-      <Tr3/>
+      <Tr1 />
+      <Tr2 />
+      <Tr3 />
       <Trdesigner />
       {/* <Tr4/> */}
-      
-     
-      <Footer1/>
+
+
+      <Footer1 />
     </>
   )
 }
