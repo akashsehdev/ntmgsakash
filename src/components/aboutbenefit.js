@@ -37,7 +37,7 @@ function WhoCanBenefit() {
           <img
             src={img2}
             alt="Model 2"
-            className="rounded-2xl object-cover w-64 sm:w-72 md:w-80 h-[400px] sm:h-[450px] md:h-[500px] border-4 border-white shadow-2xl absolute right-0 -top-4 z-0 transform rotate-[5deg] transition-transform duration-500 hover:scale-105"
+            className="rounded-2xl object-cover w-64 sm:w-72 md:w-80 h-[400px] sm:h-[450px] md:h-[500px] border-4 border-white shadow-2xl absolute left-72 -top-4 z-0 transform rotate-[5deg] transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>
