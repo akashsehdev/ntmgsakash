@@ -388,7 +388,7 @@ export default function Carousel() {
               onClick={() => handleClick(model)}
             >
 
-                
+
               {/* Model Name Centered */}
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <h2 className="text-white text-center text-2xl md:text-3xl font-bold px-6 py-2 rounded-full">

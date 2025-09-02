@@ -27,8 +27,9 @@ export default function Home() {
       <About />
       <AgencyCarousel />
       {/* <Course/> */}
-      <Modelcarousel />
+      {/* <Modelcarousel /> */}
       <SuccessStories />
+      <Modelcarousel />
       <Placements />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
