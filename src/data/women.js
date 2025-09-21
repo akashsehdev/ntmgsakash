@@ -1,12 +1,85 @@
-import pic6 from "../assets/pic6.jpg";
-import pic7 from "../assets/pic7.JPG";
-import pic8 from "../assets/pic8.JPG";
-import pic9 from "../assets/pic9.JPG";
+import pic1 from "../assets/homePageModels/064A1482 copy.jpg";
+import pic2 from "../assets/homePageModels/064A1564 copy.jpg";
+import pic3 from "../assets/homePageModels/064A2304 copy.jpg";
+import pic4 from "../assets/homePageModels/064A2376 copy.jpg";
+import pic5 from "../assets/homePageModels/064A2850 copy.jpg";
+import pic6 from "../assets/homePageModels/064A3051 copy.jpg";
+import pic7 from "../assets/homePageModels/064A4074 copy.jpg";
+import pic8 from "../assets/homePageModels/064A4141 copy.jpg";
+import pic9 from "../assets/homePageModels/064A4199 copy.jpg";
+import pic10 from "../assets/homePageModels/064A4339 copy.jpg";
+import pic11 from "../assets/homePageModels/064A4438 copy.jpg";
+import pic12 from "../assets/homePageModels/064A4470 copy.jpg";
+import pic13 from "../assets/homePageModels/064A4559 copy.jpg";
+import pic14 from "../assets/homePageModels/064A4567 copy.jpg";
+import pic15 from "../assets/homePageModels/064A4756 copy.jpg";
+import pic16 from "../assets/homePageModels/064A4831.jpg";
+
 
 const women = [
   {
     id: "1",
     name: "Isabelle pic6esol",
+    image: pic1,
+    sideImage: pic1,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic1,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "2",
+    name: "Isabelle Tournesol",
+    image: pic2,
+    sideImage: pic2,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic2,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "3",
+    name: "Isabelle Tournesol",
+    image: pic3,
+    sideImage: pic3,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic3,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "4",
+    name: "Isabelle Tournesol",
+    image: pic4,
+    sideImage: pic4,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic4,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "5",
+    name: "Isabelle Tournesol",
+    image: pic5,
+    sideImage: pic5,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic5,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "6",
+    name: "Isabelle Tournesol",
     image: pic6,
     sideImage: pic6,
     sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
@@ -17,7 +90,7 @@ const women = [
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
   {
-    id: "2",
+    id: "7",
     name: "Isabelle Tournesol",
     image: pic7,
     sideImage: pic7,
@@ -29,24 +102,108 @@ const women = [
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
   {
-    id: "3",
+    id: "8",
     name: "Isabelle Tournesol",
     image: pic8,
     sideImage: pic8,
     sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
-    rightImage: pic7,
+    rightImage: pic8,
     rightImageLabel: "GIORGIO ARMANI S/S 2023",
     bottomLabel: "ELLE ITALY MARCH 2023",
     bottomCredit: "Federico Porciolini",
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
   {
-    id: "4",
+    id: "9",
     name: "Isabelle Tournesol",
     image: pic9,
     sideImage: pic9,
     sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
     rightImage: pic9,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "10",
+    name: "Isabelle Tournesol",
+    image: pic10,
+    sideImage: pic10,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic10,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "11",
+    name: "Isabelle Tournesol",
+    image: pic11,
+    sideImage: pic11,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic11,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "12",
+    name: "Isabelle Tournesol",
+    image: pic12,
+    sideImage: pic12,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic12,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "13",
+    name: "Isabelle Tournesol",
+    image: pic13,
+    sideImage: pic13,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic13,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "14",
+    name: "Isabelle Tournesol",
+    image: pic14,
+    sideImage: pic14,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic14,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "15",
+    name: "Isabelle Tournesol",
+    image: pic15,
+    sideImage: pic15,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic15,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "16",
+    name: "Isabelle Tournesol",
+    image: pic16,
+    sideImage: pic16,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic16,
     rightImageLabel: "GIORGIO ARMANI S/S 2023",
     bottomLabel: "ELLE ITALY MARCH 2023",
     bottomCredit: "Federico Porciolini",

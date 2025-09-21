@@ -15,6 +15,9 @@ import FormPopupCTA from "../components/formpopup";
 import AgencyCarousel from "../components/agencies_associated";
 import SuccessStories from "../components/success_stories";
 import Placements from "../components/placements";
+import TalentJourney from "../components/talentJourney";
+import GallerySection from "../components/mentorSection";
+import MentorSection from "../components/mentorSection";
 
 export default function Home() {
   return (
@@ -29,8 +32,10 @@ export default function Home() {
       {/* <Course/> */}
       {/* <Modelcarousel /> */}
       <SuccessStories />
+      <TalentJourney />
       <Modelcarousel />
       <Placements />
+      <MentorSection />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
       <FAQSection />

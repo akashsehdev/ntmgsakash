@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import { Link, useLocation } from "react-router-dom";
-import HomeBg from "../assets/home_bg2.png"; // Default background image
+import HomeBg from "../assets/ntmgs_bg.png"; // Default background image
 import tarun_1 from "../assets/tarun_2.JPG";
 import programs_banner from "../assets/programs/programs_banner.jpeg"; // Example program banner image
 
@@ -26,15 +26,24 @@ const HeroSection = () => {
   };
   const contentMap = {
     "/": {
-      title: "Welcome to NTMGS World",
-      description: "Empowering models with confidence and style",
-      a: (
+
+      title: (
+
         <>
-          <b>10000+</b> students trained <br />
-          <b>10+</b> years of experience mentor <br />
-          <b>100+</b> batches completed <br />
-          <b>Provide career guidance</b>
+
+          <span className="drop-shadow-lg">"WELCOME TO NTMGS WORLD"</span>
         </>
+      ),
+      description: "Walk with the kind of confidence that tells the world you know your worth. Style is just the reflection, but the real power is the belief you carry within.",
+      a: (
+        <div className="drop-shadow-md">
+          <p className="font-semibold">Empowering models with confidence and style</p>
+          <br />
+          <b className="drop-shadow-lg">10000+</b> Students Trained <br />
+          <b>10+</b> Years of Experience as Mentor <br />
+          <b>100+</b> Batches Completed <br />
+          <b>Provide Career Guidance</b>
+        </div>
       ),
     },
 
@@ -72,66 +81,53 @@ const HeroSection = () => {
   const bgImage = backgroundImages[location.pathname] || backgroundImages["/"];
   const currentContent = contentMap[location.pathname] || contentMap["/"];
 
-  // return (
-  // <div
-  //   className="relative h-[550px] md:h-screen w-full bg-cover bg-center transition-all duration-500"
-  //   style={{
-  //     backgroundImage: `url('${bgImage}')`,
-  //   }}
-  // >
-  //   {/* Overlay */}
-  //   <div className="absolute inset-0 bg-black/30 z-0" />
 
-  //   {/* Navbar */}
-  //   <div className="absolute text-white top-5 left-1/2 transform -translate-x-1/2 w-full px-4 md:px-0 z-10">
-  //     <Navbar />
-  //   </div>
-
-  //   {/* Hero Content */}
-  //   <div className="absolute top-1/3 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-  //     <h1 className=" text-3xl md:text-5xl font-bold drop-shadow-md">
-  //       Welcome to NTMGS World
-  //     </h1>
-  //     <p className="mt-4 text-xl">
-  //       Empowering models with confidence and style
-  //     </p>
-
-  //     <Link to="/register">
-  //       <button className="inline-block mt-6 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-md hover:bg-gray-200 transition duration-300">
-  //         Enroll Now
-  //       </button>
-  //     </Link>
-  //   </div>
-  // </div>
-  // );
   return (
+    // <div
+    //   className="relative h-[550px] top-1/2  justify-center md:h-screen w-full bg-fixed bg-cover bg-top transition-all duration-500"
+    //   style={{
+    //     backgroundImage: `url('${bgImage}')`,
+    //   }}
+    // >
     <div
-      className="relative h-[550px] justify-center md:h-screen w-full bg-fixed bg-cover bg-top transition-all duration-500"
+      className="relative h-[600px] md:h-screen w-full bg-fixed bg-cover bg-center md:bg-top transition-all duration-500"
       style={{
         backgroundImage: `url('${bgImage}')`,
       }}
     >
-      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-full px-4 md:px-0 z-10">
         <Navbar />
       </div>
 
-      <div className="absolute top-1/3 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-        <h1 className="text-2xl font-serif md:text-5xl font-bold drop-shadow-lg">
+      <div className="absolute top-1/4 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
+        {/* <h1 className="text-2xl font-serif md:text-4xl font-bold drop-shadow-lg">
           {currentContent.title}
         </h1>
         <p className="mt-2 md:mt-4 font-bold text-md md:text-[20px] drop-shadow-md">
           "{currentContent.description}"
         </p>
         <br />
-        <p className="mt-2 md:mt-4 text-md md:text-xl drop-shadow-md">
+        <p className="mt-2 md:mt-4 text-md md:text-lg drop-shadow-md">
+          {currentContent.a}
+        </p> */}
+        <h1 className="text-md sm:text-2xl md:text-4xl font-serif font-bold drop-shadow-lg px-2">
+          {currentContent.title}
+        </h1>
+        <p className="mt-2 md:mt-4 font-medium text-sm sm:text-base md:text-lg drop-shadow-md px-3">
+          "{currentContent.description}"
+        </p>
+        <br />
+        <br />
+        <br />
+        <p className="mt-3 text-sm sm:text-base md:text-xl drop-shadow-md px-3">
           {currentContent.a}
         </p>
 
         <Link to="/register">
-          <button className="mt-6 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
-            Enroll Now
+          <button className="mt-6 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-black hover:text-white transition duration-300">
+            Book A Consultation Call
           </button>
         </Link>
       </div>

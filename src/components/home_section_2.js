@@ -59,8 +59,8 @@
 // export default HomeModelsSection2;
 
 import React from "react";
-import topimg from "../assets/talents/pic2.jpg";
-import bottomimg from "../assets/talents/pic8.JPG";
+import topimg from "../assets/talents/pic1.jpg";
+import bottomimg from "../assets/talents/pic3.jpg";
 
 const HomeModelsSection2 = () => {
   return (

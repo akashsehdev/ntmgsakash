@@ -195,7 +195,7 @@ export default function Index() {
 
             <section className="max-w-[1440px]  mx-auto px-2 py-20">
                 <div className="text-center mb-4">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
+                    <h2 className="text-3xl font-serif md:text-6xl text-gray-800">
                         Testimonials
                     </h2>
                 </div>
