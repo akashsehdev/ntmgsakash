@@ -50,12 +50,12 @@ function WhoCanBenefit() {
           <img
             src={img1}
             alt="Model 1"
-            className="w-full max-w-sm h-64 sm:h-72 object-cover rounded-2xl border-2 border-white shadow-xl"
+            className="w-full max-w-sm h-[370px] object-cover rounded-2xl border-2 border-white shadow-xl"
           />
           <img
             src={img2}
             alt="Model 2"
-            className="w-full max-w-sm h-64 sm:h-72 object-cover rounded-2xl border-2 border-white shadow-xl"
+            className="w-full max-w-sm h-[370px] object-cover rounded-2xl border-2 border-white shadow-xl"
           />
         </div>
 

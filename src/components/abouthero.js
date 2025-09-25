@@ -62,7 +62,7 @@
 import { Link } from "react-router-dom";
 import tarun_1 from "../assets/tarun_1.JPEG";
 // import tarun_2 from "../assets/tarun_2.JPG";
-import tarun_3 from "../assets/tarun_3.JPG";
+import tarun_3 from "../assets/mentors/tarun.jpeg";
 
 export default function Abouthero() {
   return (
@@ -70,7 +70,7 @@ export default function Abouthero() {
       <div className="max-w-7xl mx-auto px-4 lg:px-16 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* Left Image */}
-        <div className="w-full h-80 sm:h-96 md:h-[500px] lg:h-[600px] relative">
+        <div className="w-full h-[450px] sm:h-96 md:h-[500px] lg:h-[600px] relative">
           <img
             src={tarun_3}
             alt="Background"
@@ -80,7 +80,7 @@ export default function Abouthero() {
 
         {/* Right Text */}
         <div className="flex flex-col justify-center text-center lg:text-left">
-          <h1 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-3xl font-serif sm:text-4xl md:text-5xl  mb-6">
             About NTMGS
           </h1>
           <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
