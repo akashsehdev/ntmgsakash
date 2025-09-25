@@ -2,7 +2,6 @@
 // import pic7 from "../assets/homePageModels/064A4074 copy.jpg";
 import pic14 from "../assets/homePageModels/064A4567 copy.jpg";
 
-
 const pic1 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A1482%20copy.jpg";
 const pic2 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A1564%20copy.jpg";
 const pic3 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A2304%20copy.jpg";

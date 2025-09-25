@@ -59,8 +59,13 @@
 // export default HomeModelsSection2;
 
 import React from "react";
-import topimg from "../assets/talents/pic1.jpg";
-import bottomimg from "../assets/talents/pic3.jpg";
+// import topimg from "../assets/talents/pic1.jpg";
+// import bottomimg from "../assets/talents/pic3.jpg";
+
+// topimg = "";
+// bottomimg = "";
+const topimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/HomeSection2/pic1.jpg";
+const bottomimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/HomeSection2/pic2.png"
 
 const HomeModelsSection2 = () => {
   return (

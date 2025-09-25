@@ -76,7 +76,7 @@ export default function Carousel() {
         {models.map((model) => (
           <div key={`${model.category}-${model.id}`} className="px-4">
             <div
-              className="relative md:w-[390px] h-[250px] md:h-[430px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
+              className="relative md:w-[390px] h-[400px] md:h-[430px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
               // onClick={() => handleClick(model)
               // }
             >

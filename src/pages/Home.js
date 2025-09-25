@@ -18,6 +18,7 @@ import Placements from "../components/placements";
 import TalentJourney from "../components/talentJourney";
 import GallerySection from "../components/mentorSection";
 import MentorSection from "../components/mentorSection";
+import ImageGrid from "../components/ImageGrid";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <MentorSection />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
+      <ImageGrid/>
       <FAQSection />
       {/* <div className="flex justify-center text-center md:gap-14 col-span-2"> */}
       {/* mobile */}

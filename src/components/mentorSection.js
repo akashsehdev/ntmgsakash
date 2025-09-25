@@ -47,7 +47,7 @@ export default function MentorSection() {
               <img
                 src={mentor.image}
                 alt={mentor.name}
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[550px] md:h-[350px] object-cover lg:object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
               {/* Overlay with name + caption */}
