@@ -1,25 +1,16 @@
 import React from "react";
 import a from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.27.jpeg";
-// import b from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.28 (1).jpeg";
-// import c from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.28.jpeg";
 import d from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.29 (1).jpeg";
 import e from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.29 (2).jpeg";
-// import f from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.29.jpeg";
 import g from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.30 (1).jpeg";
 import h from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.30.jpeg";
 import i from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.31 (1).jpeg";
-// import j from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.31.jpeg";
 import k from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.32 (1).jpeg";
 import l from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.32 (2).jpeg";
-// import m from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.32.jpeg";
-// import n from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.33.jpeg";
-// import o from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.34 (1).jpeg";
-// import p from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.34.jpeg";
-// import q from "../assets/models/WhatsApp Image 2025-08-08 at 15.23.35.jpeg";
 
 
 const logos = [
-    a,  d, e, g, h, i, k, l
+    a, d, e, g, h, i, k, l
 ];
 
 export default function SuccessStories() {
@@ -43,7 +34,7 @@ export default function SuccessStories() {
                 </div>
             </div>
 
-            <div className="flex animate-scroll">
+            <div className="flex animate-scroll-fast">
                 {loopLogos.map((logo, index) => (
                     <div className="flex-shrink-0" key={index}>
                         <img

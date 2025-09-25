@@ -12,7 +12,6 @@ import HeroSection from '../components/hero_new'
 import Programs from '../components/programs'
 import FAQSection from '../components/faq'
 
-
 export default function AboutPage() {
   return (
     <>

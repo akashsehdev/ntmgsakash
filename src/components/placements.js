@@ -36,7 +36,7 @@ export default function Placements() {
                 </div>
             </div>
 
-            <div className="flex animate-scroll">
+            <div className="flex animate-scroll-fast">
                 {loopLogos.map((logo, index) => (
                     <div className="flex-shrink-0" key={index}>
                         <img
