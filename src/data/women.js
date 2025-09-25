@@ -1,20 +1,23 @@
-import pic1 from "../assets/homePageModels/064A1482 copy.jpg";
-import pic2 from "../assets/homePageModels/064A1564 copy.jpg";
-import pic3 from "../assets/homePageModels/064A2304 copy.jpg";
-import pic4 from "../assets/homePageModels/064A2376 copy.jpg";
-import pic5 from "../assets/homePageModels/064A2850 copy.jpg";
-import pic6 from "../assets/homePageModels/064A3051 copy.jpg";
-import pic7 from "../assets/homePageModels/064A4074 copy.jpg";
-import pic8 from "../assets/homePageModels/064A4141 copy.jpg";
-import pic9 from "../assets/homePageModels/064A4199 copy.jpg";
-import pic10 from "../assets/homePageModels/064A4339 copy.jpg";
-import pic11 from "../assets/homePageModels/064A4438 copy.jpg";
-import pic12 from "../assets/homePageModels/064A4470 copy.jpg";
-import pic13 from "../assets/homePageModels/064A4559 copy.jpg";
-import pic14 from "../assets/homePageModels/064A4567 copy.jpg";
-import pic15 from "../assets/homePageModels/064A4756 copy.jpg";
-import pic16 from "../assets/homePageModels/064A4831.jpg";
 
+// import pic7 from "../assets/homePageModels/064A4074 copy.jpg";
+import pic14 from "../assets/homePageModels/064A4567 copy.jpg";
+
+
+const pic1 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A1482%20copy.jpg";
+const pic2 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A1564%20copy.jpg";
+const pic3 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A2304%20copy.jpg";
+const pic4 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A2376%20copy.jpg";
+const pic5 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A2850%20copy.jpg";
+const pic6 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A3051%20copy.jpg";
+const pic8 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4141%20copy.jpg";
+const pic9 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4199%20copy.jpg";
+const pic10 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4274%20copy.jpg";
+const pic11 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4438%20copy.jpg";
+const pic12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4470%20copy.jpg";
+const pic13 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4851%20copy.jpg";
+const pic15 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5032%20copy.jpg";
+const pic16 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5286%20copy.jpg";
+const pic17 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5564.jpg";
 
 const women = [
   {
@@ -89,18 +92,18 @@ const women = [
     bottomCredit: "Federico Porciolini",
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
-  {
-    id: "7",
-    name: "Isabelle Tournesol",
-    image: pic7,
-    sideImage: pic7,
-    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
-    rightImage: pic7,
-    rightImageLabel: "GIORGIO ARMANI S/S 2023",
-    bottomLabel: "ELLE ITALY MARCH 2023",
-    bottomCredit: "Federico Porciolini",
-    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
-  },
+  // {
+  //   id: "7",
+  //   name: "Isabelle Tournesol",
+  //   image: pic7,
+  //   sideImage: pic7,
+  //   sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+  //   rightImage: pic7,
+  //   rightImageLabel: "GIORGIO ARMANI S/S 2023",
+  //   bottomLabel: "ELLE ITALY MARCH 2023",
+  //   bottomCredit: "Federico Porciolini",
+  //   bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  // },
   {
     id: "8",
     name: "Isabelle Tournesol",
@@ -132,6 +135,18 @@ const women = [
     sideImage: pic10,
     sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
     rightImage: pic10,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "17",
+    name: "Isabelle Tournesol",
+    image: pic17,
+    sideImage: pic17,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic17,
     rightImageLabel: "GIORGIO ARMANI S/S 2023",
     bottomLabel: "ELLE ITALY MARCH 2023",
     bottomCredit: "Federico Porciolini",
@@ -209,7 +224,8 @@ const women = [
     bottomCredit: "Federico Porciolini",
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
-  
+
+
 ];
 
 export default women;

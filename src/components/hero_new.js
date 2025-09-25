@@ -9,14 +9,16 @@ const HeroSection = () => {
   const location = useLocation();
 
   const backgroundImages = {
-    "/": HomeBg,
-    "/talent":
-      HomeBg,
+    // "/": HomeBg,
+    "/": "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/ntmgs_bg.png",
+    // "/talent":
+    //   HomeBg,
     "/tarun-rajput": tarun_1,
     "/work":
       "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=80",
     "/programspage": programs_banner,
-    "/talent": "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
+    // "/talent": "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
+    "/talent": "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/ntmgs_bg.png",
     "/register": "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     // "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     "/about":

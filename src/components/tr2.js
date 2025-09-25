@@ -71,7 +71,7 @@
 // export default Index;
 
 import React from "react";
-import tarun_1 from "../assets/tarun_1.JPEG";
+import tarun_1 from "../assets/mentors/tarun.jpeg";
 import tarun_2 from "../assets/tarun_2.JPG";
 
 export default function ModernJourney() {
