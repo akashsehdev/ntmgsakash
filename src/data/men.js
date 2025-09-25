@@ -167,7 +167,7 @@ const w12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A2342%
 // const w6 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/WhatsApp%20Image%202025-08-24%20at%2023.36.37%20(5).jpeg";
 
 
-const men = [
+const TalentedModel = [
   {
     id: "1",
     name: "Jenisha Basnet",
@@ -182,7 +182,7 @@ const men = [
 
   {
     id: "2",
-    name: "Another Model",
+    name: "Janvi",
     images: [
       { type: "main", src: pic1, label: "Main Image" },
       { type: "side", src: pic2, label: "" },
@@ -419,4 +419,4 @@ const men = [
 
 ];
 
-export default men;
+export default TalentedModel;

@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/carouselComp";
-import men from "../data/men";
+import TalentedModel from "../data/men";
 import women from "../data/women";
 import boys from "../data/boys";
 import girls from "../data/girls";
@@ -15,7 +15,7 @@ const Talent = () => {
   return (
     <>
       <HeroSection />
-      <ModelBook models={men} category="men" />
+      <ModelBook models={TalentedModel} category="men" />
       {/* <div className="min-h-screen bg-white py-10 px-4 md:px-10">
         <h1 className="text-4xl font-bold text-center mb-10">Our Talent</h1>
 
