@@ -21,7 +21,7 @@ export default function ImageGrid() {
           {images.map((src, index) => (
             <div
               key={index}
-              className="w-full aspect-[4/3] overflow-hidden rounded-lg shadow-md"
+              className="w-full h-[250px] aspect-[5/3] overflow-hidden rounded-lg shadow-md"
             >
               <img
                 src={src}

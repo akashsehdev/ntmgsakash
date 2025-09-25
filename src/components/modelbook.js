@@ -111,7 +111,7 @@ export default function ModelBook({ models = [], category }) {
               <img
                 src={model.images.find((img) => img.type === "main").src}
                 alt={model.name}
-                className="w-full h-80 sm:h-72 md:h-80 lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-[450px] sm:h-72 md:h-80 lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <p className="mt-2 text-center text-white font-medium text-sm sm:text-base">

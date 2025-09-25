@@ -117,10 +117,18 @@ const FormPopupCTA = () => {
     "
                         >
                             {/* Background image with overlay */}
-                            <div
+                            {/* <div
                                 className="absolute inset-0 rounded-lg bg-cover bg-center"
                                 style={{ backgroundImage: "url('/apala.jpg')" }}
+                            ></div> */}
+                            <div
+                                className="absolute inset-0 rounded-lg bg-cover bg-center"
+                                style={{
+                                    backgroundImage:
+                                        "url('https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A3857%20copy.jpg')",
+                                }}
                             ></div>
+
                             <div className="absolute inset-0 rounded-lg bg-black/80"></div>
 
                             {/* Scrollable content sits on top */}
