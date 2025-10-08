@@ -154,26 +154,56 @@ import TestimonialCard from "./testimonialcard";
 
 export default function Index() {
     const testimonials = [
+        // {
+        //     url: "https://www.youtube.com/embed/J-M4jyCYbcY?si=tmbfAGJ4r2ZHDWif",
+        //     caption: "Maira Singh Rajput",
+
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/wUzFMtcKY34?si=DHF_5N6yKI6p2bJo",
+        //     caption: "Pradeep Singh Kharera",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/Y41CidYTdx0?si=5mEUYRnYRHOmLBQ4",
+        //     caption: "Mohit Prajapati",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/YFjMHiWnSH4?si=ZR-oJ40c9Trf9JKR",
+        //     caption: "Deepak Gehlot",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/9PXn_ub0KKE?si=cdFUJu7QPfPvGzpA",
+        //     caption: "Nitesh shares",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/LshKm_1aFeE?si=23PTvOUHSABCqvhl",
+        //     caption: "Karan Singh",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/X59ramTYk18?si=VWYB-oicErlB-rLN",
+        //     caption: "Vishakha Jaatni",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/_UbKfcYw5gI?si=RZf_7nH3o-FIWe1c",
+        //     caption: "Shrey",
+        // },
         {
-            url: "https://www.youtube.com/embed/J-M4jyCYbcY?si=tmbfAGJ4r2ZHDWif",
-            caption: "Maira Singh Rajput",
+            url: "https://www.youtube.com/embed/tVBNl3gLMo4?si=vftn4NhvIFscoBPT",
+            caption: "Oliver",
 
         },
         {
-            url: "https://www.youtube.com/embed/wUzFMtcKY34?si=DHF_5N6yKI6p2bJo",
-            caption: "Pradeep Singh Kharera",
+            url: "https://www.youtube.com/embed/RAEbTR_zCcc?si=e8dPPdmDdt-ezLj9",
+            caption: "Isha",
         },
         {
-            url: "https://www.youtube.com/embed/Y41CidYTdx0?si=5mEUYRnYRHOmLBQ4",
-            caption: "Mohit Prajapati",
+            url: "https://www.youtube.com/embed/UcoCK_DEEsQ?si=BRp_zTWbwiy5pqJz",
+            caption: "Khushi Arora",
         },
         {
-            url: "https://www.youtube.com/embed/YFjMHiWnSH4?si=ZR-oJ40c9Trf9JKR",
-            caption: "Deepak Gehlot",
-        },
-        {
-            url: "https://www.youtube.com/embed/9PXn_ub0KKE?si=cdFUJu7QPfPvGzpA",
-            caption: "Nitesh shares",
+            url: "https://www.youtube.com/embed/GjqDIDIHkWc?si=i1yF1V3SkRoGqQel",
+            caption: "Arshi Aggarwal",
+
         },
         {
             url: "https://www.youtube.com/embed/LshKm_1aFeE?si=23PTvOUHSABCqvhl",
@@ -187,76 +217,89 @@ export default function Index() {
             url: "https://www.youtube.com/embed/_UbKfcYw5gI?si=RZf_7nH3o-FIWe1c",
             caption: "Shrey",
         },
+        {
+            url: "https://www.youtube.com/embed/Y41CidYTdx0?si=5mEUYRnYRHOmLBQ4",
+            caption: "Mohit Prajapati",
+        },
+        {
+            url: "https://www.youtube.com/embed/YFjMHiWnSH4?si=ZR-oJ40c9Trf9JKR",
+            caption: "Deepak Gahlot",
+        },
+        {
+            url: "https://www.youtube.com/embed/9PXn_ub0KKE?si=cdFUJu7QPfPvGzpA",
+            caption: "Nitesh",
+        }
+
     ];
 
-    return (
-        <div className="bg-[grey]/5">
+return (
+    <div className="bg-[grey]/5">
 
 
-            <section className="max-w-[1440px]  mx-auto px-2 py-20">
-                <div className="text-center mb-4">
-                    <h2 className="text-3xl font-serif md:text-6xl text-gray-800">
-                        Testimonials
-                    </h2>
-                </div>
+        <section className="max-w-[1440px]  mx-auto px-2 py-20">
+            <div className="text-center mb-4">
+                <h2 className="text-3xl font-serif md:text-6xl text-gray-800">
+                    Testimonials
+                </h2>
+            </div>
 
-                {/* Mobile Carousel */}
-                <div className="block sm:hidden relative">
-                    <CarouselProvider
-                        naturalSlideWidth={100}
-                        isIntrinsicHeight={true}
-                        totalSlides={testimonials.length}
-                        visibleSlides={1}
-                        step={1}
-                        infinite
-                    >
-                        <div className="flex items-center px-4">
-                            <ButtonBack className="absolute left-1 z-10 bg-white border rounded-full p-2 shadow hover:bg-gray-200">
-                                ◀
-                            </ButtonBack>
-                            <Slider>
-                                {testimonials.map((item, index) => (
-                                    <Slide index={index} key={index}>
-                                        <TestimonialCard imgs={item.url} caps={item.caption} />
-                                    </Slide>
-                                ))}
-                            </Slider>
-                            <ButtonNext className="absolute right-1 z-10 bg-white border rounded-full p-2 shadow hover:bg-gray-200">
-                                ▶
-                            </ButtonNext>
-                        </div>
-                    </CarouselProvider>
-                </div>
+            {/* Mobile Carousel */}
+            <div className="block sm:hidden relative">
+                <CarouselProvider
+                    naturalSlideWidth={100}
+                    isIntrinsicHeight={true}
+                    totalSlides={testimonials.length}
+                    visibleSlides={1}
+                    step={1}
+                    infinite
+                >
+                    <div className="flex items-center px-4">
+                        <ButtonBack className="absolute left-1 z-10 bg-white border rounded-full p-2 shadow hover:bg-gray-200">
+                            ◀
+                        </ButtonBack>
+                        <Slider>
+                            {testimonials.map((item, index) => (
+                                <Slide index={index} key={index}>
+                                    <TestimonialCard imgs={item.url} caps={item.caption} />
+                                </Slide>
+                            ))}
+                        </Slider>
+                        <ButtonNext className="absolute right-1 z-10 bg-white border rounded-full p-2 shadow hover:bg-gray-200">
+                            ▶
+                        </ButtonNext>
+                    </div>
+                </CarouselProvider>
+            </div>
 
-                {/* Desktop Carousel */}
-                <div className="hidden sm:block relative mt-8">
-                    <CarouselProvider
-                        naturalSlideWidth={100}
-                        isIntrinsicHeight={true}
-                        totalSlides={testimonials.length}
-                        visibleSlides={3}
-                        step={1}
-                        infinite
-                    >
-                        <div className="flex items-center">
-                            <ButtonBack className="absolute left-4 z-10 bg-white border rounded-full p-3 shadow hover:bg-gray-200">
-                                ◀
-                            </ButtonBack>
-                            <Slider className="px-16">
-                                {testimonials.map((item, index) => (
-                                    <Slide index={index} key={index}>
-                                        <TestimonialCard imgs={item.url} caps={item.caption} />
-                                    </Slide>
-                                ))}
-                            </Slider>
-                            <ButtonNext className="absolute right-4 z-10 bg-white border rounded-full p-3 shadow hover:bg-gray-200">
-                                ▶
-                            </ButtonNext>
-                        </div>
-                    </CarouselProvider>
-                </div>
-            </section>
-        </div>
-    );
+            {/* Desktop Carousel */}
+            <div className="hidden sm:block relative mt-8">
+                <CarouselProvider
+                    naturalSlideWidth={100}
+                    isIntrinsicHeight={true}
+                    totalSlides={testimonials.length}
+                    visibleSlides={3}
+                    step={1}
+                    infinite
+                >
+                    <div className="flex items-center">
+                        <ButtonBack className="absolute left-4 z-10 bg-white border rounded-full p-3 shadow hover:bg-gray-200">
+                            ◀
+                        </ButtonBack>
+                        <Slider className="px-16">
+                            {testimonials.map((item, index) => (
+                                <Slide index={index} key={index}>
+                                    <TestimonialCard imgs={item.url} caps={item.caption} />
+                                </Slide>
+                            ))}
+                        </Slider>
+                        <ButtonNext className="absolute right-4 z-10 bg-white border rounded-full p-3 shadow hover:bg-gray-200">
+                            ▶
+                        </ButtonNext>
+                    </div>
+                </CarouselProvider>
+            </div>
+        </section>
+    </div>
+);
 }
 

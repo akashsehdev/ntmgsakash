@@ -142,6 +142,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import { Link, useLocation } from "react-router-dom";
 import tarun_1 from "../assets/tarun_2.JPG";
+import about_bg from "../assets/about_bg.jpg";
 import programs_banner from "../assets/programs/programs_banner.jpeg";
 
 const HeroSection = () => {
@@ -176,8 +177,8 @@ const HeroSection = () => {
     "/programspage": programs_banner,
     "/register":
       "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
-    "/about":
-      "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
+    "/about": about_bg,
+    // "https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=1600&q=80",
     "/contact":
       "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80",
   };
@@ -274,7 +275,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="absolute top-1/4 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-        <h1 className="text-md sm:text-2xl md:text-4xl font-serif font-bold drop-shadow-lg px-2">
+        <h1 className="text-2xl mt-20 md:text-4xl font-serif font-bold drop-shadow-lg px-2">
           {currentContent.title}
         </h1>
         <p className="mt-2 md:mt-4 font-medium text-sm sm:text-base md:text-lg drop-shadow-md px-3">
