@@ -19,8 +19,23 @@ import TalentJourney from "../components/talentJourney";
 import GallerySection from "../components/mentorSection";
 import MentorSection from "../components/mentorSection";
 import ImageGrid from "../components/ImageGrid";
+import ShortsSection from "../components/shortsSection";
 
 export default function Home() {
+  const shorts = [
+    "tkiZHKUoPag",
+    "1YiqBHh3f0g", 
+    "Ey9AiPGRoVM",
+    "GSui5a24s38",
+    "Kmqg-ubAfDg", 
+    "3Z0nRSHI3fI",
+    "EQMNqDMyHLA",
+    "tvYw8VPFD78",
+    "gwdaKSZ-t7o",
+    "Il683TlPysA",
+    "FEMM4-0xcpA"
+
+  ];
   return (
     <>
       {/* <Header /> */}
@@ -39,8 +54,10 @@ export default function Home() {
       <MentorSection />
       {/* <Teamsection /> */}
       <Testimonialcarousel />
-      <ImageGrid/>
+      <ShortsSection videos={shorts} />
+
       <FAQSection />
+      <ImageGrid />
       {/* <div className="flex justify-center text-center md:gap-14 col-span-2"> */}
       {/* mobile */}
       {/* <div className="md:hidden">
