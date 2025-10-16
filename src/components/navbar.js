@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Navbar = ({ className = "" }) => {
   ];
 
   return (
-   
+
     <div className={`fixed top-0 left-0 w-full z-50 bg-transparent text-white px-6 md:px-[100px] mt-5 ${className}`}>
       {/* Flex container to organize logo, nav, icons */}
       <div className="flex items-center justify-between w-full">
@@ -40,8 +40,8 @@ const Navbar = ({ className = "" }) => {
               <Link to={item.path} key={item.label}>
                 <div
                   className={`px-6 py-2 mx-2 my-2 cursor-pointer transition-all duration-200 rounded-full ${location.pathname === item.path
-                      ? "bg-white text-black font-medium"
-                      : item.color
+                    ? "bg-white text-black font-medium"
+                    : item.color
                     }`}
                 >
                   {item.label}
@@ -58,8 +58,14 @@ const Navbar = ({ className = "" }) => {
             <a href="https://www.instagram.com/newtalentmodelgrooming/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
+            <a href="https://www.facebook.com/newtalentmodelsgroomingschool" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
             <a href="https://wa.me/+919971957084" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp />
+            </a>
+            <a href="https://www.youtube.com/@TARUNRAJPUTMODELMENTOR" target="_blank" rel="noopener noreferrer">
+              <FaYoutube />
             </a>
           </div>
 
@@ -81,8 +87,8 @@ const Navbar = ({ className = "" }) => {
                 <div
                   onClick={() => setIsOpen(false)}
                   className={`cursor-pointer text-center px-2 py-2 rounded-3xl ${location.pathname === item.path
-                      ? "bg-white text-[green] font-semibold"
-                      : item.color || "text-white"
+                    ? "bg-white text-[green] font-semibold"
+                    : item.color || "text-white"
                     }`}
                 >
                   {item.label}
@@ -92,11 +98,17 @@ const Navbar = ({ className = "" }) => {
 
             {/* Mobile Social Icons */}
             <div className="flex gap-4 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/newtalentmodelgrooming/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="https://www.facebook.com/newtalentmodelsgroomingschool" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF />
               </a>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+919971957084" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
+              </a>
+              <a href="https://www.youtube.com/@TARUNRAJPUTMODELMENTOR" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
               </a>
             </div>
           </div>

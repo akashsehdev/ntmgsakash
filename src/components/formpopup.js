@@ -122,10 +122,10 @@ const FormPopupCTA = () => {
                                 style={{ backgroundImage: "url('/apala.jpg')" }}
                             ></div> */}
                             <div
-                                className="absolute inset-0 rounded-lg bg-cover bg-center"
+                                className="absolute inset-0 md:bg-left-top rounded-lg bg-cover bg-left-top"
                                 style={{
                                     backgroundImage:
-                                        "url('https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A3857%20copy.jpg')",
+                                        "url('https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A3051%20copy.jpg')",
                                 }}
                             ></div>
 

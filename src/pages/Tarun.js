@@ -10,6 +10,7 @@ import Tr2 from '../components/tr2'
 import Tr3 from '../components/tr3'
 import Trdesigner from '../components/trdesigner'
 import HeroSection from '../components/hero_new'
+import ImageGrid2 from '../components/ImageGrid2'
 // import Tr4 from '../components/tr4'
 
 export default function Tarun() {
@@ -23,9 +24,9 @@ export default function Tarun() {
       <Tr1 />
       <Tr2 />
       <Tr3 />
-      <Trdesigner />
+      {/* <Trdesigner /> */}
       {/* <Tr4/> */}
-
+      <ImageGrid2 />
 
       <Footer1 />
     </>

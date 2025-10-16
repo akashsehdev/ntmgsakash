@@ -279,7 +279,7 @@
 // export default programs;
 
 
-import image from "../assets/test2.jpeg";
+import image from "../assets/programs/program8.jpeg";
 import one from "../assets/programs/program1.jpeg";
 import two from "../assets/programs/program2.jpeg";
 import three from "../assets/programs/program3.jpeg";

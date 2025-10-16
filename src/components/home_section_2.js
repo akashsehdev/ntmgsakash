@@ -64,31 +64,32 @@ import React from "react";
 
 // topimg = "";
 // bottomimg = "";
-const topimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/HomeSection2/pic1.jpg";
+// const topimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/HomeSection2/pic1.jpg";
+const topimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A3906.jpg";
 const bottomimg = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/HomeSection2/pic2.png"
 
 const HomeModelsSection2 = () => {
   return (
-    <section className="w-full bg-white px-4 md:px-12 pb-36 lg:px-20">
+    <section className="w-full bg-white px-4 md:px-12 pb-32 lg:px-20">
       <div className="lg:flex justify-center text-center md:gap-14 col-span-2">
         <div className="w-full pt-20 md:pt-0 md:w-1/2 relative lg:flex items-center justify-center md:order-none">
           <div className="relative w-full md:w-1/2 flex justify-center">
             <img
-              src={topimg} // Replace with actual path
+              src={bottomimg} // Replace with actual path
               alt="Model 1"
               className="w-64 md:w-80 rounded-2xl lg:w-96 object-cover shadow-lg"
             />
             <img
-              src={bottomimg} // Replace with actual path
+              src={topimg} // Replace with actual path
               alt="Model 2"
-              className="absolute top-[140px] rounded-2xl md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover  border-[grey] shadow-xl"
+              className="absolute top-[200px] h-[210px] md:h-[360px] rounded-2xl md:bottom-[-150px] md:left-[150px] w-52 md:w-60 lg:w-[350px] object-cover border-[grey] shadow-xl"
             />
           </div>
         </div>
 
         {/* Text Content */}
         <div className="w-ful md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl font-serif md:text-5xl pt-32 font-normal text-[#6b3e2e] mb-6 ">
+          <h2 className="text-3xl sm:text-4xl font-serif md:text-5xl pt-40 md:pt-32 font-normal text-[#6b3e2e] mb-6 ">
             NTMGS Models
           </h2>
 

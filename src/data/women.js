@@ -16,7 +16,15 @@ const pic12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePag
 const pic13 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A4851%20copy.jpg";
 const pic15 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5032%20copy.jpg";
 const pic16 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5286%20copy.jpg";
-const pic17 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/064A5564.jpg";
+const pic17 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic1.jpeg";
+const pic18 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic2.jpeg";
+const pic19 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic3.jpeg";
+const pic20 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic4.jpeg";
+const pic21 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic5.jpeg";
+const pic22 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic6.jpeg";
+const pic23 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic7.jpeg";
+const pic24 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic8.jpeg";
+const pic25 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/homePageModels/pic9.jpeg";
 
 const women = [
   {
@@ -139,18 +147,7 @@ const women = [
     bottomCredit: "Federico Porciolini",
     bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
   },
-  {
-    id: "17",
-    name: "Isabelle Tournesol",
-    image: pic17,
-    sideImage: pic17,
-    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
-    rightImage: pic17,
-    rightImageLabel: "GIORGIO ARMANI S/S 2023",
-    bottomLabel: "ELLE ITALY MARCH 2023",
-    bottomCredit: "Federico Porciolini",
-    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
-  },
+  
   {
     id: "11",
     name: "Isabelle Tournesol",
@@ -218,6 +215,42 @@ const women = [
     sideImage: pic16,
     sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
     rightImage: pic16,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "17",
+    name: "Isabelle Tournesol",
+    image: pic17,
+    sideImage: pic17,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic17,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "18",
+    name: "Isabelle Tournesol",
+    image: pic24,
+    sideImage: pic18,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic18,
+    rightImageLabel: "GIORGIO ARMANI S/S 2023",
+    bottomLabel: "ELLE ITALY MARCH 2023",
+    bottomCredit: "Federico Porciolini",
+    bio: "Ashish began modelling at age 18. She was signed by Viva Model Management in Milan. Her debut fashion show was walking for Giorgio Armani during the A/W 2020 season.",
+  },
+  {
+    id: "19",
+    name: "Isabelle Tournesol",
+    image: pic25,
+    sideImage: pic19,
+    sideImageLabel: "BOTTEGA VENETA CAMPAIGN 23",
+    rightImage: pic19,
     rightImageLabel: "GIORGIO ARMANI S/S 2023",
     bottomLabel: "ELLE ITALY MARCH 2023",
     bottomCredit: "Federico Porciolini",
