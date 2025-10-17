@@ -72,14 +72,14 @@ export default function Carousel() {
 
   return (
     <div className="relative px-4 mb-20 py-10 mx-auto">
-      
-        <h1 className="text-2xl text-center font-serif md:text-6xl pb-3 font-normal  text-gray-900 leading-snug">
-          Our Talent
-        </h1>
-        <p className="text-md md:text-xl pb-10 text-center leading-relaxed tracking-wide font-light">
-          Our Proud Models, Who Shine Bright, Day and Night.
-        </p>
-     
+
+      <h1 className="text-2xl text-center font-serif md:text-6xl pb-3 font-normal  text-gray-900 leading-snug">
+        Our Talent
+      </h1>
+      <p className="text-md md:text-xl pb-10 text-center leading-relaxed tracking-wide font-light">
+        Our Proud Models, Who Shine Bright, Day and Night.
+      </p>
+
       <Slider {...settings}>
         {models.map((model) => (
           <div key={`${model.category}-${model.id}`} className="px-4">

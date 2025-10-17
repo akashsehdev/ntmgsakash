@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer1 = () => {
     return (
@@ -14,24 +15,64 @@ const Footer1 = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-base font-semibold leading-4 text-white">Quick Links</h2>
-                    <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">Home</p>
+                    <h2 className="text-base font-semibold leading-4 gap-4 text-white">Quick Links</h2>
+                    {/* <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">Home</p>
                     <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">About</p>
-                    <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">Tarun Rajput</p>
-                    <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">Contact Us</p>
+                    <p className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer">Tarun Rajput</p> */}
+                    <div className="flex flex-col">
+                        <Link
+                            to="/"
+                            className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer transition duration-300"
+                        >
+                            Home
+                        </Link>
+
+                        <Link
+                            to="/about"
+                            className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer transition duration-300"
+                        >
+                            About
+                        </Link>
+
+                        <Link
+                            to="/tarun-rajput"
+                            className="hover:text-gray-500 text-base leading-4 mt-6 text-white cursor-pointer transition duration-300"
+                        >
+                            Tarun Rajput
+                        </Link>
+
+                    </div>
+                    <br />
+                    <p><a href="https://wa.me/+919971957084" className="hover:text-gray-500 text-base leading-4  text-white cursor-pointer" target="_blank" rel="noopener noreferrer">
+                        Contact Us
+                    </a></p>
                 </div>
                 <div >
                     <label className="text-xl font-medium text-white">Social</label>
                     <div className="flex items-center gap-x-4 mt-4">
 
+                        {/* <a href="https://www.instagram.com/newtalentmodelgrooming/" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="text-white" />
+                        </a>
+                        <a href="https://www.youtube.com/@TARUNRAJPUTMODELMENTOR" target="_blank" rel="noopener noreferrer">
+                            <FaYoutube className="text-white" />
+                        </a> */}
+
                         <a href="https://www.instagram.com/newtalentmodelgrooming/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="text-white" />
+                        </a>
+                        <a href="https://www.facebook.com/newtalentmodelsgroomingschool" target="_blank" rel="noopener noreferrer">
+                            <FaFacebookF className="text-white" />
+                        </a>
+                        <a href="https://wa.me/+919971957084" target="_blank" rel="noopener noreferrer">
+                            <FaWhatsapp className="text-white" />
                         </a>
                         <a href="https://www.youtube.com/@TARUNRAJPUTMODELMENTOR" target="_blank" rel="noopener noreferrer">
                             <FaYoutube className="text-white" />
                         </a>
 
                     </div>
+
 
 
 
@@ -44,7 +85,7 @@ const Footer1 = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
