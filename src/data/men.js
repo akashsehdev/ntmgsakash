@@ -162,6 +162,74 @@ const w10 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A2302%
 const w11 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A2304%20copy.jpg";
 const w12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/064A2342%20copy.jpg";
 
+const i1 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic1.jpeg";
+const i2 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic2.jpeg";
+const i3 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic3.jpeg";
+
+const i4 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic4.jpeg";
+const i5 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic5.jpeg";
+const i6 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic6.jpeg";
+
+const i7 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic7.jpeg";
+const i8 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic8.jpeg";
+const i9 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic9.jpeg";
+
+const i10 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic10.jpeg";
+const i11 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic11.jpeg";
+const i12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic12.jpeg";
+
+const i13 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic13.jpeg";
+const i14 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic14.jpeg";
+const i15 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic15.jpeg";
+
+const i16 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic16.jpeg";
+const i17 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic17.jpeg";
+const i18 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic18.jpeg";
+
+const i19 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic19.jpeg";
+const i20 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic20.jpeg";
+const i21 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic21.jpeg";
+
+
+//drive images
+const img1 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic22.jpg";
+const img2 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic23.jpg";
+const img3 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic24.jpg";
+
+const img4 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic25.jpg";
+const img5 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic26.jpg";
+const img6 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/pic27.jpg";
+
+const img7 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic28.jpg";
+const img8 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic29.jpg";
+const img9 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic30.jpg";
+
+const img10 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic31.jpg";
+const img11 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic32.jpg";
+const img12 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic33.jpg";
+
+const img13 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic34.jpg";
+const img14 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic35.jpg";
+const img15 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic36.jpg";
+
+const img16 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic37.jpg";
+const img17 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic38.jpg";
+const img18 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic39.jpg";
+
+const img19 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic40.jpg";
+const img20 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic41.jpg";
+const img21 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic42.jpg";
+
+const img22 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic43.jpg";
+const img23 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic44.jpg";
+const img24 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic45.jpg";
+
+const img25 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic46.jpg";
+const img26 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic47.jpg";
+const img27 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/whatsappImages/pic48.jpg";
+
+
+
 // const w4 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/WhatsApp%20Image%202025-08-24%20at%2023.36.37%20(3).jpeg";
 // const w5 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/WhatsApp%20Image%202025-08-24%20at%2023.36.37%20(4).jpeg";
 // const w6 = "https://cdn.jsdelivr.net/gh/akashsehdev/ntmgs-assets@main/WhatsApp%20Image%202025-08-24%20at%2023.36.37%20(5).jpeg";
@@ -189,7 +257,7 @@ const TalentedModel = [
       { type: "right", src: pic3, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: pic3, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Bio here...",
+    bio: "Janvi began modelling at age 21. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season",
   },
   {
     id: "3",
@@ -224,7 +292,7 @@ const TalentedModel = [
   //   ],
   //   bio: "Khushi began her modelling at age 18. She was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   // },
-  
+
   // {
   //   id: "7",
   //   name: "Another Model",
@@ -257,7 +325,118 @@ const TalentedModel = [
       { type: "right", src: model6, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: model6, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Gungun began his modelling at age 22. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "19",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i1, label: "Main Image" },
+      { type: "side", src: i2, label: "" },
+      { type: "right", src: i3, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i1, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "24",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i7, label: "Main Image" },
+      { type: "side", src: i8, label: "" },
+      { type: "right", src: i9, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i7, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "26",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i13, label: "Main Image" },
+      { type: "side", src: i14, label: "" },
+      { type: "right", src: i15, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i13, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "20",
+    name: "Diksha",
+    images: [
+      { type: "main", src: w1, label: "Main Image" },
+      { type: "side", src: w2, label: "" },
+      { type: "right", src: w3, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: w3, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Diksha began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "13",
+    name: "Arshi Aggarwal",
+    images: [
+      { type: "main", src: model13, label: "Main Image" },
+      { type: "side", src: model14, label: "" },
+      { type: "right", src: model15, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: model14, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Arshi Aggarwal began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "15",
+    name: "Isha",
+    images: [
+      { type: "main", src: pic13, label: "Main Image" },
+      { type: "side", src: pic14, label: "" },
+      { type: "right", src: pic15, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: pic15, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Isha began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "28",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i19, label: "Main Image" },
+      { type: "side", src: i20, label: "" },
+      { type: "right", src: i21, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i16, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+
+  {
+    id: "29",
+    name: "Jyoti",
+    images: [
+      { type: "main", src: img1, label: "Main Image" },
+      { type: "side", src: img2, label: "" },
+      { type: "right", src: img3, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img1, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Jyoti began modelling at age 21. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "33",
+    name: "Another Model",
+    images: [
+      { type: "main", src: img13, label: "Main Image" },
+      { type: "side", src: img14, label: "" },
+      { type: "right", src: img15, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img13, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "12",
+    name: "Manvi",
+    images: [
+      { type: "main", src: model10, label: "Main Image" },
+      { type: "side", src: model11, label: "" },
+      { type: "right", src: model12, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: model12, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Manvi began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "6",
@@ -270,6 +449,7 @@ const TalentedModel = [
     ],
     bio: "Upanshu began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
+
   {
     id: "10",
     name: "Ujjwal Indolia",
@@ -279,7 +459,7 @@ const TalentedModel = [
       { type: "right", src: ujjwal3, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: ujjwal3, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Ujjwal Indolia began his modelling at age 24. He was signed by NTMGS in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Ujjwal Indolia began his modelling at age 19. He was signed by NTMGS in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "11",
@@ -290,30 +470,9 @@ const TalentedModel = [
       { type: "right", src: model9, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: model9, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Faizan began his modelling at age 27. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
-  {
-    id: "12",
-    name: "Manvi",
-    images: [
-      { type: "main", src: model10, label: "Main Image" },
-      { type: "side", src: model11, label: "" },
-      { type: "right", src: model12, label: "GIORGIO ARMANI S/S 2023" },
-      { type: "bottom", src: model12, label: "NTMGS 2025", credit: "DCOP" },
-    ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
-  },
-  {
-    id: "13",
-    name: "Arshi Aggarwal",
-    images: [
-      { type: "main", src: model13, label: "Main Image" },
-      { type: "side", src: model14, label: "" },
-      { type: "right", src: model15, label: "GIORGIO ARMANI S/S 2023" },
-      { type: "bottom", src: model14, label: "NTMGS 2025", credit: "DCOP" },
-    ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
-  },
+
   // {
   //   id: "14",
   //   name: "Another Model",
@@ -326,17 +485,7 @@ const TalentedModel = [
   //   bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   // },
 
-  {
-    id: "15",
-    name: "Isha",
-    images: [
-      { type: "main", src: pic13, label: "Main Image" },
-      { type: "side", src: pic14, label: "" },
-      { type: "right", src: pic15, label: "GIORGIO ARMANI S/S 2023" },
-      { type: "bottom", src: pic15, label: "NTMGS 2025", credit: "DCOP" },
-    ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
-  },
+
   {
     id: "16",
     name: "Amit",
@@ -346,7 +495,7 @@ const TalentedModel = [
       { type: "right", src: pic9, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: pic8, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Amit began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "17",
@@ -357,7 +506,7 @@ const TalentedModel = [
       { type: "right", src: pic12, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: pic12, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Lalit yadav began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 
   // {
@@ -371,17 +520,7 @@ const TalentedModel = [
   //   ],
   //   bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   // },
-  {
-    id: "20",
-    name: "Diksha",
-    images: [
-      { type: "main", src: w1, label: "Main Image" },
-      { type: "side", src: w2, label: "" },
-      { type: "right", src: w3, label: "GIORGIO ARMANI S/S 2023" },
-      { type: "bottom", src: w3, label: "NTMGS 2025", credit: "DCOP" },
-    ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
-  },
+
   {
     id: "21",
     name: "Lakshay",
@@ -391,7 +530,7 @@ const TalentedModel = [
       { type: "right", src: w6, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: w6, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Lakshay began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "22",
@@ -402,7 +541,7 @@ const TalentedModel = [
       { type: "right", src: w12, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: w12, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Manish began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 
   {
@@ -418,6 +557,120 @@ const TalentedModel = [
   },
 
 
+  {
+    id: "23",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i4, label: "Main Image" },
+      { type: "side", src: i5, label: "" },
+      { type: "right", src: i6, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i4, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+
+  {
+    id: "25",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i10, label: "Main Image" },
+      { type: "side", src: i11, label: "" },
+      { type: "right", src: i12, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i10, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+
+  {
+    id: "27",
+    name: "Another Model",
+    images: [
+      { type: "main", src: i17, label: "Main Image" },
+      { type: "side", src: i16, label: "" },
+      { type: "right", src: i18, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: i16, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+
+  {
+    id: "30",
+    name: "Yash",
+    images: [
+      { type: "main", src: img4, label: "Main Image" },
+      { type: "side", src: img5, label: "" },
+      { type: "right", src: img6, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img4, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Yash began modelling at age 22. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "31",
+    name: "Sahil",
+    images: [
+      { type: "main", src: img7, label: "Main Image" },
+      { type: "side", src: img8, label: "" },
+      { type: "right", src: img9, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img7, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Sahil began modelling at age 24. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "32",
+    name: "Akash Sehdev",
+    images: [
+      { type: "main", src: img10, label: "Main Image" },
+      { type: "side", src: img11, label: "" },
+      { type: "right", src: img12, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img10, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Akash Sehdev began modelling at age 25. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+
+  {
+    id: "34",
+    name: "Another Model",
+    images: [
+      { type: "main", src: img16, label: "Main Image" },
+      { type: "side", src: img17, label: "" },
+      { type: "right", src: img18, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img16, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "35",
+    name: "Another Model",
+    images: [
+      { type: "main", src: img19, label: "Main Image" },
+      { type: "side", src: img20, label: "" },
+      { type: "right", src: img21, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img19, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "36",
+    name: "Another Model",
+    images: [
+      { type: "main", src: img22, label: "Main Image" },
+      { type: "side", src: img23, label: "" },
+      { type: "right", src: img24, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img22, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
+  {
+    id: "37",
+    name: "Another Model",
+    images: [
+      { type: "main", src: img25, label: "Main Image" },
+      { type: "side", src: img26, label: "" },
+      { type: "right", src: img27, label: "GIORGIO ARMANI S/S 2023" },
+      { type: "bottom", src: img25, label: "NTMGS 2025", credit: "DCOP" },
+    ],
+    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+  },
 ];
 
 export default TalentedModel;

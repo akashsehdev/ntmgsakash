@@ -217,18 +217,18 @@ export default function Index() {
             url: "https://www.youtube.com/embed/_UbKfcYw5gI?si=RZf_7nH3o-FIWe1c",
             caption: "Shrey",
         },
-        {
-            url: "https://www.youtube.com/embed/Y41CidYTdx0?si=5mEUYRnYRHOmLBQ4",
-            caption: "Mohit Prajapati",
-        },
-        {
-            url: "https://www.youtube.com/embed/YFjMHiWnSH4?si=ZR-oJ40c9Trf9JKR",
-            caption: "Deepak Gahlot",
-        },
-        {
-            url: "https://www.youtube.com/embed/9PXn_ub0KKE?si=cdFUJu7QPfPvGzpA",
-            caption: "Nitesh",
-        }
+        // {
+        //     url: "https://www.youtube.com/embed/Y41CidYTdx0?si=5mEUYRnYRHOmLBQ4",
+        //     caption: "Mohit Prajapati",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/YFjMHiWnSH4?si=ZR-oJ40c9Trf9JKR",
+        //     caption: "Deepak Gahlot",
+        // },
+        // {
+        //     url: "https://www.youtube.com/embed/9PXn_ub0KKE?si=cdFUJu7QPfPvGzpA",
+        //     caption: "Nitesh",
+        // }
 
     ];
 
