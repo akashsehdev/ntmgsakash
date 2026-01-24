@@ -329,36 +329,36 @@ const TalentedModel = [
   },
   {
     id: "19",
-    name: "Another Model",
+    name: "Shilpa Choudhary",
     images: [
       { type: "main", src: i1, label: "Main Image" },
       { type: "side", src: i2, label: "" },
       { type: "right", src: i3, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: i1, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Shilpa Choudhary began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "24",
-    name: "Another Model",
+    name: "Anjali",
     images: [
       { type: "main", src: i7, label: "Main Image" },
       { type: "side", src: i8, label: "" },
       { type: "right", src: i9, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: i7, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Anjali began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "26",
-    name: "Another Model",
+    name: "Maira",
     images: [
       { type: "main", src: i13, label: "Main Image" },
       { type: "side", src: i14, label: "" },
       { type: "right", src: i15, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: i13, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Maira began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
   {
     id: "20",
@@ -395,14 +395,14 @@ const TalentedModel = [
   },
   {
     id: "28",
-    name: "Another Model",
+    name: "Vishaka Jatni",
     images: [
       { type: "main", src: i19, label: "Main Image" },
       { type: "side", src: i20, label: "" },
       { type: "right", src: i21, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: i16, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Vishaka Jatni began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 
   {
@@ -546,14 +546,14 @@ const TalentedModel = [
 
   {
     id: "18",
-    name: "Another Model",
+    name: "Mayank Motwani",
     images: [
       { type: "main", src: pic19, label: "Main Image" },
       { type: "side", src: pic20, label: "" },
       { type: "right", src: pic21, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: pic21, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Mayank Motwani began his modelling at age 24. He was signed by NTMGS in Delhi. Her debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 
 
@@ -583,14 +583,14 @@ const TalentedModel = [
 
   {
     id: "27",
-    name: "Another Model",
+    name: "Pardeep Kharera",
     images: [
       { type: "main", src: i17, label: "Main Image" },
       { type: "side", src: i16, label: "" },
       { type: "right", src: i18, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: i16, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Pardeep Kharera began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 
   {
@@ -662,14 +662,14 @@ const TalentedModel = [
   },
   {
     id: "37",
-    name: "Another Model",
+    name: "Rommy B",
     images: [
       { type: "main", src: img25, label: "Main Image" },
       { type: "side", src: img26, label: "" },
       { type: "right", src: img27, label: "GIORGIO ARMANI S/S 2023" },
       { type: "bottom", src: img25, label: "NTMGS 2025", credit: "DCOP" },
     ],
-    bio: "Another Model began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
+    bio: "Rommy B began modelling at age 26. He was signed by New Talent Modelling Agency in Delhi. His debut fashion show was walking for Giorgio Armani during the A/W 2024 season.",
   },
 ];
 
