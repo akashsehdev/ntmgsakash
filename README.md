@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# New Talent Models Grooming School
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React website for New Talent Models Grooming School (NTMGS), including course and mentor information, talent portfolios, registration/contact forms, Firebase persistence, and a serverless email endpoint.
 
-## Available Scripts
+## Technology
 
-In the project directory, you can run:
+- React 18, React Router 6, and Create React App (`react-scripts` 5)
+- Tailwind CSS 3 plus project CSS
+- Firebase Firestore, Storage, and Analytics
+- Vercel serverless function with Nodemailer
+- Axios, Framer Motion, Swiper, React Slick, and Pure React Carousel
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js 18+ (Node.js 20 LTS recommended)
+- npm 9+
+- Internet access for remote media, Google Fonts, Firebase, and hosted form services
+- A Gmail App Password if the email API is used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project was verified with Node.js `v24.8.0` and npm `11.6.0`.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone <repository-url>
+cd ntmgsakash
+npm ci
+```
 
-### `npm run build`
+Use `npm ci` for a reproducible install from `package-lock.json`. Use `npm install` only when intentionally changing dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Environment configuration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create `.env.local` in the project root for the serverless email endpoint:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```dotenv
+ADMIN_EMAIL=your-gmail-address@gmail.com
+ADMIN_PASS=your-16-character-gmail-app-password
+```
 
-### `npm run eject`
+Do not commit `.env.local` or Gmail credentials. `ADMIN_PASS` must be an App Password, not the normal Gmail password.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The browser Firebase configuration is currently in `src/firebase.js`. Firebase web API keys are identifiers rather than server secrets, but Firestore and Storage must be protected by suitable Security Rules. The contact form writes to `contacts`; registration writes to `registrations`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Open <http://localhost:3000>. To bind explicitly to localhost or use another port:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+HOST=127.0.0.1 PORT=3001 npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm start` serves only React. It does **not** execute `api/sendEmail.js`, so the registration email request requires a Vercel-compatible runtime.
 
-### Code Splitting
+### Full stack with email API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+After creating `.env.local`, run:
 
-### Analyzing the Bundle Size
+```bash
+npx vercel dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open the URL printed by Vercel CLI, normally <http://localhost:3000>. This runs the frontend and `POST /api/sendEmail`.
 
-### Making a Progressive Web App
+The endpoint accepts JSON in this shape:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```json
+{
+  "name": "Example User",
+  "email": "user@example.com",
+  "phone": "+91 9000000000",
+  "message": "Optional message",
+  "courses": ["Course name"]
+}
+```
 
-### Advanced Configuration
+## Commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Command | Purpose |
+| --- | --- |
+| `npm start` | Start the React development server |
+| `npm run build` | Create an optimized bundle in `build/` |
+| `npm test -- --watchAll=false` | Run Jest once |
+| `npm test` | Run Jest in watch mode |
+| `npx vercel dev` | Run the frontend and serverless API locally |
+| `npm run eject` | Permanently expose CRA configuration; normally avoid |
 
-### Deployment
+## Routes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Route | Page |
+| --- | --- |
+| `/` | Home |
+| `/about` | About NTMGS |
+| `/tarun-rajput` | Tarun Rajput profile |
+| `/model-training` | Model training |
+| `/pageant-training` | Pageant training |
+| `/portfolio` | Portfolio development |
+| `/talent` | Talent listing |
+| `/talent/:category/:id` | Talent details |
+| `/contact` | Contact form |
+| `/register` | Registration form |
+| `/programspage` | Programs landing page |
+| `/programs` | Programs listing |
+| `/programs/:slug` | Program details |
 
-### `npm run build` fails to minify
+Valid program slugs are `online-modelling-classes`, `online-mentoring-program`, `group-batch`, `special-batch`, `personal-batch`, `talentxclusive-batch`, `portfolio-development`, and `modelling-essentials`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app uses `BrowserRouter`, so a static production host must rewrite unknown paths to `/index.html`. Otherwise refreshing a nested route such as `/talent/men/1` returns a host-level 404.
+
+## Forms and external services
+
+- Contact writes submissions to the Firebase `contacts` collection.
+- Registration writes to `registrations`, then calls `/api/sendEmail`.
+- Model-training, pageant-training, and portfolio forms post to a separately hosted Netlify endpoint hard-coded in their components.
+- Many images and videos load from jsDelivr, GitHub, and other remote hosts; offline use is incomplete.
+- Firebase Analytics initializes in the browser. Privacy tools may block analytics without breaking the main UI.
+
+For a new environment, configure minimum-access Firestore rules and test submissions without real personal data.
+
+## Production and deployment
+
+```bash
+npm run build
+npx serve -s build
+```
+
+The first command writes the optimized site to `build/`; the second previews that static bundle.
+
+For Vercel:
+
+1. Import the repository.
+2. Use `npm run build` and output directory `build` if not auto-detected.
+3. Add `ADMIN_EMAIL` and `ADMIN_PASS` as environment variables.
+4. Ensure SPA routes rewrite to `index.html`.
+5. Test Firebase writes, `/api/sendEmail`, nested-route refreshes, and remote media.
+
+Deploying only `build/` elsewhere does not include the Vercel API. Host an equivalent backend and update the registration URL, or use a platform that supports the `api/` function.
+
+## Project structure
+
+```text
+api/sendEmail.js        Vercel email function
+public/                 Static assets and HTML template
+src/assets/             Bundled images
+src/components/         Shared sections and forms
+src/data/               Programs and talent datasets
+src/pages/              Route-level pages
+src/App.js              Router configuration
+src/firebase.js         Firebase initialization
+tailwind.config.js      Tailwind configuration
+```
+
+## Verification status
+
+Verified on 30 August 2026:
+
+- `npm run build` completes successfully.
+- The development server compiles and runs at <http://127.0.0.1:3000>.
+- Every static route above and representative dynamic program/talent routes return HTTP 200.
+- The build reports existing ESLint warnings, mainly unused code, loose equality checks, and `javascript:` links.
+- `src/App.test.js` currently fails while importing `react-slick` because jsdom lacks `window.matchMedia`. Once mocked, its unchanged CRA assertion for “learn react” must also be replaced.
+- Live forms were not submitted because that would write external Firebase data and send email. Test them separately with authorized test credentials.
+
+## Troubleshooting
+
+### `matchMedia not present` during tests
+
+Add a `window.matchMedia` mock to `src/setupTests.js`, then replace the default CRA test with a current application smoke test.
+
+### Registration saves but email fails locally
+
+Use `npx vercel dev`, verify both admin variables, and use a Gmail App Password. Plain `npm start` cannot serve `/api/sendEmail`.
+
+### Firebase permission error
+
+Check the project configuration, collection names, and deployed Security Rules. Do not leave production data globally writable.
+
+### Nested route returns 404 after deployment
+
+Configure SPA fallback so every non-file route serves `/index.html`.
+
+### Missing images or video
+
+Check network access and external asset URLs. A significant part of the media library is not bundled locally.
